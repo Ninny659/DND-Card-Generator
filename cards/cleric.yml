@@ -1,0 +1,392 @@
+# Cantrips
+- name: Guidance
+  level: 0
+  school: Divination
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Concentration, up to 1 minute
+  description: 
+
+- name: Light
+  level: 0
+  school: Evocation
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, M (a firefly or phosphorescent moss)
+  duration: 1 hour
+  description: 
+
+- name: Mending
+  level: 0
+  school: Transmutation
+  classes: [Cleric]
+  casting_time: 1 Minute
+  range: Touch
+  components: V, S, M (two lodestones)
+  duration: Instantaneous
+  description: 
+
+- name: Resistance
+  level: 0
+  school: Abjuration
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a miniature cloak)
+  duration: Concentration, up to 1 minute
+  description: 
+
+- name: Sacred Flame
+  level: 0
+  school: Evocation
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S
+  duration: Instantaneous
+  description: 
+
+- name: Spare the Dying
+  level: 0
+  school: Necromancy
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description: 
+
+- name: Thaumaturgy
+  level: 0
+  school: Transmutation
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V
+  duration: Up to 1 minute
+  description: 
+
+- name: Toll the Dead
+  level: 0
+  school: Necromancy
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S
+  duration: Instantaneous
+  description: 
+
+- name: Word of Radiance
+  level: 0
+  school: Evocation
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 5 ft
+  components: V, M (a holy symbol)
+  duration: Instantaneous
+  description: 
+
+# Level 1 Spells
+- name: Bane
+  level: 1
+  school: Enchantment
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a drop of blood)
+  duration: Concentration, up to 1 minute
+  description: 
+
+- name: Bless
+  level: 1
+  school: Enchantment
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a sprinkling of holy water)
+  duration: Concentration, up to 1 minute
+  description: 
+
+- name: Command
+  level: 1
+  school: Enchantment
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V
+  duration: 1 round
+  description: 
+
+- name: Create or Destroy Water
+  level: 1
+  school: Transmutation
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a drop of water)
+  duration: Instantaneous
+  description: 
+
+- name: Cure Wounds
+  level: 1
+  school: Evocation
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description: 
+
+- name: Detect Evil and Good
+  level: 1
+  school: Divination
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Self
+  components: V, S
+  duration: Concentration, up to 10 minutes
+  description: 
+
+- name: Detect Magic
+  level: 1
+  school: Divination
+  classes: [Cleric]
+  casting_time: 1 Action (Ritual)
+  range: Self
+  components: V, S
+  duration: Concentration, up to 10 minutes
+  description: 
+
+- name: Detect Poison and Disease
+  level: 1
+  school: Divination
+  classes: [Cleric]
+  casting_time: 1 Action (Ritual)
+  range: Self
+  components: V, S, M (a yew leaf)
+  duration: Concentration, up to 10 minutes
+  description: 
+
+- name: Guiding Bolt
+  level: 1
+  school: Evocation
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 120 ft
+  components: V, S
+  duration: 1 round
+  description: 
+
+- name: Healing Word
+  level: 1
+  school: Evocation
+  classes: [Cleric]
+  casting_time: 1 Bonus Action
+  range: 60 ft
+  components: V
+  duration: Instantaneous
+  description: 
+
+- name: Inflict Wounds
+  level: 1
+  school: Necromancy
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description: 
+
+- name: Protection from Evil and Good
+  level: 1
+  school: Abjuration
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (holy water or powdered silver and iron)
+  duration: Concentration, up to 10 minutes
+  description: 
+
+- name: Purify Food and Drink
+  level: 1
+  school: Transmutation
+  classes: [Cleric]
+  casting_time: 1 Action (Ritual)
+  range: 10 ft
+  components: V, S
+  duration: Instantaneous
+  description: 
+
+- name: Sanctuary
+  level: 1
+  school: Abjuration
+  classes: [Cleric]
+  casting_time: 1 Bonus Action
+  range: 30 ft
+  components: V, S, M (a small silver mirror)
+  duration: 1 minute
+  description: 
+
+- name: Shield of Faith
+  level: 1
+  school: Abjuration
+  classes: [Cleric]
+  casting_time: 1 Bonus Action
+  range: 60 ft
+  components: V, S, M (a small parchment with a bit of holy text)
+  duration: Concentration, up to 10 minutes
+  description: 
+
+# Level 2 Spells
+- name: Aid
+  level: 2
+  school: Abjuration
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a strip of white cloth)
+  duration: 8 hours
+  description: 
+
+- name: Augury
+  level: 2
+  school: Divination
+  classes: [Cleric]
+  casting_time: 1 Minute (Ritual)
+  range: Self
+  components: V, S, M (specially marked sticks, bones, or stones)
+  duration: Instantaneous
+  description: 
+
+- name: Blindness/Deafness
+  level: 2
+  school: Necromancy
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V
+  duration: 1 minute
+  description: 
+
+- name: Calm Emotions
+  level: 2
+  school: Enchantment
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S
+  duration: Concentration, up to 1 minute
+  description: 
+
+- name: Continual Flame
+  level: 2
+  school: Evocation
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (ruby dust worth 50 gp)
+  duration: Until dispelled
+  description: 
+
+- name: Enhance Ability
+  level: 2
+  school: Transmutation
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (fur or a feather)
+  duration: Concentration, up to 1 hour
+  description: 
+
+- name: Find Traps
+  level: 2
+  school: Divination
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 120 ft
+  components: V, S
+  duration: Instantaneous
+  description: 
+
+- name: Gentle Repose
+  level: 2
+  school: Necromancy
+  classes: [Cleric]
+  casting_time: 1 Action (Ritual)
+  range: Touch
+  components: V, S, M (a pinch of salt and one copper piece)
+  duration: 10 days
+  description: 
+
+- name: Hold Person
+  level: 2
+  school: Enchantment
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a small, straight piece of iron)
+  duration: Concentration, up to 1 minute
+  description: 
+
+- name: Lesser Restoration
+  level: 2
+  school: Abjuration
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description: 
+
+- name: Locate Object
+  level: 2
+  school: Divination
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Self
+  components: V, S, M (a forked twig)
+  duration: Concentration, up to 10 minutes
+  description: 
+
+- name: Prayer of Healing
+  level: 2
+  school: Evocation
+  classes: [Cleric]
+  casting_time: 10 Minutes
+  range: 30 ft
+  components: V
+  duration: Instantaneous
+  description: 
+
+- name: Silence
+  level: 2
+  school: Illusion
+  classes: [Cleric]
+  casting_time: 1 Action (Ritual)
+  range: 120 ft
+  components: V, S
+  duration: Concentration, up to 10 minutes
+  description: 
+
+- name: Spiritual Weapon
+  level: 2
+  school: Evocation
+  classes: [Cleric]
+  casting_time: 1 Bonus Action
+  range: 60 ft
+  components: V, S
+  duration: 1 minute
+  description: 
+
+- name: Warding Bond
+  level: 2
+  school: Abjuration
+  classes: [Cleric]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a pair of platinum rings worth 50 gp each)
+  duration: 1 hour
+  description: 

@@ -1,0 +1,520 @@
+# ======================
+# BARD — CANTRIPS
+# ======================
+- name: Blade Ward
+  level: 0
+  school: Abjuration
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self
+  components: V, S
+  duration: 1 round
+  description:
+
+- name: Dancing Lights
+  level: 0
+  school: Evocation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 120 ft
+  components: V, S, M (a bit of phosphorus or wychwood, or a glowworm)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Friends
+  level: 0
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self
+  components: S, M (a small amount of makeup)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Light
+  level: 0
+  school: Evocation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Touch
+  components: V, M (a firefly or phosphorescent moss)
+  duration: 1 hour
+  description:
+
+- name: Mage Hand
+  level: 0
+  school: Conjuration
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S
+  duration: 1 minute
+  description:
+
+- name: Mending
+  level: 0
+  school: Transmutation
+  classes: [Bard]
+  casting_time: 1 Minute
+  range: Touch
+  components: V, S, M (two lodestones)
+  duration: Instantaneous
+  description:
+
+- name: Message
+  level: 0
+  school: Transmutation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 120 ft
+  components: V, S, M (a short piece of copper wire)
+  duration: 1 round
+  description:
+
+- name: Minor Illusion
+  level: 0
+  school: Illusion
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: S, M (a bit of fleece)
+  duration: 1 minute
+  description:
+
+- name: Prestidigitation
+  level: 0
+  school: Transmutation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 10 ft
+  components: V, S
+  duration: Up to 1 hour
+  description:
+
+- name: True Strike
+  level: 0
+  school: Divination
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: S
+  duration: Concentration, up to 1 round
+  description:
+
+- name: Vicious Mockery
+  level: 0
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V
+  duration: Instantaneous
+  description:
+
+
+# ======================
+# BARD — LEVEL 1
+# ======================
+- name: Animal Friendship
+  level: 1
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a morsel of food)
+  duration: 24 hours
+  description:
+
+- name: Bane
+  level: 1
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a drop of blood)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Charm Person
+  level: 1
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S
+  duration: 1 hour
+  description:
+
+- name: Comprehend Languages
+  level: 1
+  school: Divination
+  classes: [Bard]
+  casting_time: 1 Action (Ritual)
+  range: Self
+  components: V, S, M (a pinch of soot and salt)
+  duration: 1 hour
+  description:
+
+- name: Cure Wounds
+  level: 1
+  school: Evocation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Detect Magic
+  level: 1
+  school: Divination
+  classes: [Bard]
+  casting_time: 1 Action (Ritual)
+  range: Self
+  components: V, S
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Disguise Self
+  level: 1
+  school: Illusion
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self
+  components: V, S
+  duration: 1 hour
+  description:
+
+- name: Dissonant Whispers
+  level: 1
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V
+  duration: Instantaneous
+  description:
+
+- name: Faerie Fire
+  level: 1
+  school: Evocation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Feather Fall
+  level: 1
+  school: Transmutation
+  classes: [Bard]
+  casting_time: Reaction
+  range: 60 ft
+  components: V, M (a small feather)
+  duration: 1 minute
+  description:
+
+- name: Healing Word
+  level: 1
+  school: Evocation
+  classes: [Bard]
+  casting_time: 1 Bonus Action
+  range: 60 ft
+  components: V
+  duration: Instantaneous
+  description:
+
+- name: Heroism
+  level: 1
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Hideous Laughter (Tasha's)
+  level: 1
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (tiny tarts and a feather)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Identify
+  level: 1
+  school: Divination
+  classes: [Bard]
+  casting_time: 1 Minute (Ritual)
+  range: Touch
+  components: V, S, M (a pearl worth at least 100 gp and an owl feather)
+  duration: Instantaneous
+  description:
+
+- name: Illusions of Grandeur
+  level: 1
+  school: Illusion
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self
+  components: V, S
+  duration: 1 minute
+  description:
+
+- name: Longstrider
+  level: 1
+  school: Transmutation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a pinch of dirt)
+  duration: 1 hour
+  description:
+
+- name: Silent Image
+  level: 1
+  school: Illusion
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a bit of fleece)
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Sleep
+  level: 1
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 90 ft
+  components: V, S, M (a pinch of fine sand, rose petals, or a cricket)
+  duration: 1 minute
+  description:
+
+- name: Speak with Animals
+  level: 1
+  school: Divination
+  classes: [Bard]
+  casting_time: 1 Action (Ritual)
+  range: Self
+  components: V, S
+  duration: 10 minutes
+  description:
+
+- name: Thunderwave
+  level: 1
+  school: Evocation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self (15 ft cube)
+  components: V, S
+  duration: Instantaneous
+  description:
+
+
+# ======================
+# BARD — LEVEL 2
+# ======================
+- name: Aid
+  level: 2
+  school: Abjuration
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a tiny strip of white cloth)
+  duration: 8 hours
+  description:
+
+- name: Alter Self
+  level: 2
+  school: Transmutation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self
+  components: V, S
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Blindness/Deafness
+  level: 2
+  school: Necromancy
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V
+  duration: 1 minute
+  description:
+
+- name: Calm Emotions
+  level: 2
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Detect Thoughts
+  level: 2
+  school: Divination
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self
+  components: V, S, M (a copper piece)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Enhance Ability
+  level: 2
+  school: Transmutation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (fur or a feather from a beast)
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Enlarge/Reduce
+  level: 2
+  school: Transmutation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a pinch of powdered iron)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Heat Metal
+  level: 2
+  school: Transmutation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a piece of iron and a flame)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Hold Person
+  level: 2
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a small, straight piece of iron)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Invisibility
+  level: 2
+  school: Illusion
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (an eyelash encased in gum arabic)
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Knock
+  level: 2
+  school: Transmutation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V
+  duration: Instantaneous
+  description:
+
+- name: Lesser Restoration
+  level: 2
+  school: Abjuration
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Locate Animals or Plants
+  level: 2
+  school: Divination
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self
+  components: V, S, M (a bit of fur from a bloodhound)
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Locate Object
+  level: 2
+  school: Divination
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self
+  components: V, S, M (a forked twig)
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Magic Mouth
+  level: 2
+  school: Illusion
+  classes: [Bard]
+  casting_time: 1 Minute (Ritual)
+  range: 30 ft
+  components: V, S, M (a small bit of honeycomb and jade dust worth at least 10 gp)
+  duration: Until dispelled
+  description:
+
+- name: Phantasmal Force
+  level: 2
+  school: Illusion
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a bit of fleece)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: See Invisibility
+  level: 2
+  school: Divination
+  classes: [Bard]
+  casting_time: 1 Action
+  range: Self
+  components: V, S, M (a pinch of talc and powdered silver)
+  duration: 1 hour
+  description:
+
+- name: Shatter
+  level: 2
+  school: Evocation
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a chip of mica)
+  duration: Instantaneous
+  description:
+
+- name: Silence
+  level: 2
+  school: Illusion
+  classes: [Bard]
+  casting_time: 1 Action (Ritual)
+  range: 120 ft
+  components: V, S
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Suggestion
+  level: 2
+  school: Enchantment
+  classes: [Bard]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, M (a snake’s tongue and a bit of honeycomb)
+  duration: Concentration, up to 8 hours
+  description:

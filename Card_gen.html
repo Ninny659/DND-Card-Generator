@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Spell Card Generator</title>
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/controls.css">
+    </head>
+    <body>
+        <h2>Spell Card Generator — A4 (3x3 cards per page)</h2>
+
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-button active" data-tab="editor">Card Editor</button>
+            <button class="tab-button" data-tab="import">Import/Export</button>
+        </div>
+
+        <!-- Card Editor Tab -->
+        <div class="tab-content active" id="editor">
+            <div class="controls">
+                <button id="downloadPdf">Download PDF</button>
+                <button id="saveCards">Save Cards</button>
+                <button id="loadSavedCards">Load Saved Cards</button>
+                <label for="backingFile">Upload back image 63x88mm</label>
+                <input type="file" id="backingFile" name="filename" accept="image/png, image/jpeg">
+                <label>
+                    <input type="checkbox" id="mirrorBacking">
+                    Mirror backing for flip printing
+                </label>
+            </div>
+
+            <div class="class_select">
+                <label for="class_options">Filter by classes</label>
+                <ul id="class_options"></ul>
+            </div>
+
+            <div class="level_select">
+                <label for="level_options">Filter by level</label>
+                <ul
+                    id="level_options"><!-- Levels will be populated by JavaScript -->
+                </ul>
+            </div>
+
+            <div class="type_select">
+                <label for="type_options">Filter by card type</label>
+                <ul
+                    id="type_options"><!-- Card types will be populated by JavaScript -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Import/Export Tab -->
+        <div class="tab-content" id="import">
+            <div class="controls">
+                <button id="loadExample">Load default spell YAML</button>
+            </div>
+
+            <div class="class_select">
+                <label for="class_options_import">Load cards by classes</label>
+                <ul id="class_options_import"></ul>
+            </div>
+
+            <textarea id="yamlInput" placeholder="Paste YAML array of spells here" style="width:100%;height:400px"></textarea>
+        </div>
+
+        <!-- Preview Area (shared between tabs) -->
+        <div style="margin-top:14px">
+            <strong>Preview (drag to reorder cards, right-click to edit)</strong>
+            <div id="previewArea" class="preview-container"></div>
+        </div>
+
+        <!-- External Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+        <!-- Application Scripts -->
+        <script src="js/config.js"></script>
+        <script src="js/fileHandler.js"></script>
+        <script src="js/cardGenerator.js"></script>
+        <script src="js/classManager.js"></script>
+        <script src="js/contextMenu.js"></script>
+        <script src="js/filterManager.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

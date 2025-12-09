@@ -1,0 +1,480 @@
+# ======================
+# DRUID — CANTRIPS
+# ======================
+- name: Control Flames
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 60 ft
+  components: S
+  duration: Instantaneous
+  description:
+
+- name: Create Bonfire
+  level: 0
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Druidcraft
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Frostbite
+  level: 0
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Guidance
+  level: 0
+  school: Divination
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Infestation
+  level: 0
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a living flea)
+  duration: Instantaneous
+  description:
+
+- name: Magic Stone
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Bonus Action
+  range: Touch
+  components: V, S
+  duration: 1 minute
+  description:
+
+- name: Mending
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Minute
+  range: Touch
+  components: V, S, M (two lodestones)
+  duration: Instantaneous
+  description:
+
+- name: Mold Earth
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 30 ft
+  components: S
+  duration: Instantaneous
+  description:
+
+- name: Poison Spray
+  level: 0
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 10 ft
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Produce Flame
+  level: 0
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Self (30 ft throw)
+  components: V, S
+  duration: 10 minutes
+  description:
+
+- name: Resistance
+  level: 0
+  school: Abjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a miniature cloak)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Shape Water
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 30 ft
+  components: S
+  duration: Instantaneous
+  description:
+
+- name: Shillelagh
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Bonus Action
+  range: Touch
+  components: V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)
+  duration: 1 minute
+  description:
+
+- name: Thorn Whip
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a stem of a thorned plant)
+  duration: Instantaneous
+  description:
+
+
+# ======================
+# DRUID — LEVEL 1
+# ======================
+- name: Animal Friendship
+  level: 1
+  school: Enchantment
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a morsel of food)
+  duration: 24 hours
+  description:
+
+- name: Charm Person
+  level: 1
+  school: Enchantment
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S
+  duration: 1 hour
+  description:
+
+- name: Create or Destroy Water
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a drop of water for create / a few grains of sand for destroy)
+  duration: Instantaneous
+  description:
+
+- name: Cure Wounds
+  level: 1
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Detect Magic
+  level: 1
+  school: Divination
+  classes: [Druid]
+  casting_time: 1 Action (Ritual)
+  range: Self
+  components: V, S
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Detect Poison and Disease
+  level: 1
+  school: Divination
+  classes: [Druid]
+  casting_time: 1 Action (Ritual)
+  range: Self
+  components: V, S, M (a yew leaf)
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Entangle
+  level: 1
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 90 ft
+  components: V, S
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Faerie Fire
+  level: 1
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Fog Cloud
+  level: 1
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 120 ft
+  components: V, S
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Goodberry
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a sprig of mistletoe)
+  duration: 24 hours
+  description:
+
+- name: Healing Word
+  level: 1
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 Bonus Action
+  range: 60 ft
+  components: V
+  duration: Instantaneous
+  description:
+
+- name: Jump
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a grasshopper’s hind leg)
+  duration: 1 minute
+  description:
+
+- name: Longstrider
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a pinch of dirt)
+  duration: 1 hour
+  description:
+
+- name: Purify Food and Drink
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action (Ritual)
+  range: 10 ft
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Speak with Animals
+  level: 1
+  school: Divination
+  classes: [Druid]
+  casting_time: 1 Action (Ritual)
+  range: Self
+  components: V, S
+  duration: 10 minutes
+  description:
+
+- name: Thunderwave
+  level: 1
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Self (15 ft cube)
+  components: V, S
+  duration: Instantaneous
+  description:
+
+
+# ======================
+# DRUID — LEVEL 2
+# ======================
+- name: Acid Arrow (Melf's)
+  level: 2
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 90 ft
+  components: V, S, M (powdered rhubarb leaf and an adder's stomach)
+  duration: Instantaneous
+  description:
+
+- name: Alter Self
+  level: 2
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Self
+  components: V, S
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Barkskin
+  level: 2
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a handful of oak bark)
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Darkvision
+  level: 2
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (either a pinch of dried carrot or an agate)
+  duration: 8 hours
+  description:
+
+- name: Enhance Ability
+  level: 2
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (fur or a feather from a beast)
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Flame Blade
+  level: 2
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 Bonus Action
+  range: Self
+  components: V, S, M (leaf of sumac)
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Flaming Sphere
+  level: 2
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (tallow, brimstone, and powdered iron)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Gust of Wind
+  level: 2
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Self (60 ft line)
+  components: V, S, M (a legume seed)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Heat Metal
+  level: 2
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a piece of iron and a flame)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Hold Person
+  level: 2
+  school: Enchantment
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a small straight piece of iron)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Lesser Restoration
+  level: 2
+  school: Abjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Locate Animals or Plants
+  level: 2
+  school: Divination
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Self
+  components: V, S, M (a bit of fur from a bloodhound)
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Locate Object
+  level: 2
+  school: Divination
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Self
+  components: V, S, M (a forked twig)
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Moonbeam
+  level: 2
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 Action
+  range: 120 ft
+  components: V, S, M (several seeds of any moonseed plant and a piece of opalescent feldspar)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Pass without Trace
+  level: 2
+  school: Abjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Self
+  components: V, S, M (ashes from a burned leaf of mistletoe and a sprig of spruce)
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Protection from Poison
+  level: 2
+  school: Abjuration
+  classes: [Druid]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: 1 hour
+  description:

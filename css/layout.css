@@ -1,0 +1,149 @@
+:root {
+    --card-w-mm: 63mm;
+    --card-h-mm: 88mm;
+    --card-border-radius: 10px;
+    --gap-mm: 6mm;
+}
+
+body {
+    font-family: 'Garamond', serif;
+    background: #faf8f3;
+    padding: 18px;
+}
+
+h2 {
+    margin: 6px 0 12px;
+}
+
+textarea {
+    font-family: monospace;
+    resize: vertical;
+}
+
+/* Tabs */
+.tab-nav {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background: white;
+    border: 2px solid #ddd;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.tab-button:hover {
+    background: #f9f9f9;
+}
+
+.tab-button.active {
+    background: #faf8f3;
+    border-color: #999;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Preview Container */
+.preview-container {
+    margin-top: 8px;
+    padding: 20px;
+    background: #f2f2f2;
+    max-width: 800px;
+}
+
+/* Sheet (pages) */
+.pages-wrap {
+    width: 210mm;
+    background: transparent;
+}
+
+.sheet {
+    width: 210mm;
+    height: 297mm;
+    box-sizing: border-box;
+    padding: 10mm 8mm;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, var(--card-h-mm));
+    gap: var(--gap-mm);
+    background: white;
+    border: 1px solid #333;
+    transform-origin: top left;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-content: start;
+    justify-content: center;
+}
+
+.sheet:last-child {
+    margin-bottom: 0;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    html, body {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: white !important;
+        width: 210mm;
+        height: 297mm;
+    }
+    
+    /* Hide everything except sheets */
+    body > *:not(#previewArea) {
+        display: none !important;
+    }
+    
+    #previewArea {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        max-width: none !important;
+    }
+    
+    #previewArea > *:not(.sheet) {
+        display: none !important;
+    }
+    
+    .sheet {
+        page-break-after: always;
+        page-break-inside: avoid;
+        margin: 0 !important;
+        padding: 10mm 8mm !important;
+        border: none !important;
+        box-shadow: none !important;
+        width: 210mm !important;
+        height: 297mm !important;
+        background: white !important;
+        display: grid !important;
+    }
+    
+    /* Ensure cards don't break across pages */
+    .card {
+        page-break-inside: avoid;
+    }
+}

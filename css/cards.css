@@ -1,0 +1,90 @@
+/* Card Styles */
+.card {
+    width: var(--card-w-mm);
+    height: var(--card-h-mm);
+    box-sizing: border-box;
+    padding: 6px;
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #fbf8ef 0%, #f3ead1 100%);
+    border: 3px double #3a2f2f;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Backing card overrides */
+.backing-card {
+    background: none !important;
+    padding: 0 !important;
+    cursor: default !important;
+}
+
+.backing-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.title {
+    font-size: 12pt;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    padding-bottom: 4px;
+}
+
+.class-line {
+    font-size: 6pt;
+    text-align: center;
+    margin: 6px 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 8pt;
+    margin: 0 2px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.subtitle {
+    font-size: 9pt;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 6px;
+}
+
+.section-label {
+    font-size: 9pt;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.section-text {
+    font-size: 8.5pt;
+}
+
+.text {
+    font-size: 8.5pt;
+    flex: 1;
+    overflow: auto;
+}
+
+.backing-card {
+    background: none !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.backing-sheet {
+    z-index: 1;
+}

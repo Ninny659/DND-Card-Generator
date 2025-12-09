@@ -1,0 +1,108 @@
+/* Controls and UI Elements */
+.controls {
+    margin: 10px 0 18px;
+}
+
+.controls button {
+    margin-right: 8px;
+    padding: 8px 16px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.controls button:hover {
+    background: #f0f0f0;
+    border-color: #999;
+}
+
+.controls label {
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+/* Class Selection */
+.class_select {
+    margin: 15px 0;
+}
+
+#class_options,
+#class_options_import {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#class_options li,
+#class_options_import li {
+    display: inline-block;
+}
+
+#class_options label,
+#class_options_import label {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: white;
+}
+
+#class_options input[type="checkbox"],
+#class_options_import input[type="checkbox"] {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+#class_options label:hover,
+#class_options_import label:hover {
+    border-color: #999;
+    background: #f9f9f9;
+}
+
+#class_options input[type="checkbox"]:checked + span,
+#class_options_import input[type="checkbox"]:checked + span {
+    font-weight: bold;
+}
+
+.type_select {
+    margin-bottom: 10px;
+}
+
+.type_select ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.type_select li {
+    display: inline-block;
+}
+
+.type_select label {
+    background: #f2f2f2;
+    border-radius: 3px;
+}
+
+.type_select input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.level_select ul {    
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 5rem 5rem 5rem 5rem 5rem;
+    flex-wrap: wrap;
+    gap: 10px;
+}

@@ -1,0 +1,368 @@
+# ======================
+# ARTIFICER — CANTRIPS
+# ======================
+- name: Acid Splash
+  level: 0
+  school: Conjuration
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S
+  duration:
+  description:
+
+- name: Guidance
+  level: 0
+  school: Divination
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Light
+  level: 0
+  school: Evocation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, M (a firefly or phosphorescent moss)
+  duration: 1 hour
+  description:
+
+- name: Mage Hand
+  level: 0
+  school: Conjuration
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S
+  duration: 1 minute
+  description:
+
+- name: Mending
+  level: 0
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Minute
+  range: Touch
+  components: V, S, M (two lodestones)
+  duration: Instantaneous
+  description:
+
+- name: Message
+  level: 0
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 120 ft
+  components: V, S, M (a short piece of copper wire)
+  duration: 1 round
+  description:
+
+- name: Prestidigitation
+  level: 0
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 10 ft
+  components: V, S
+  duration: Up to 1 hour
+  description:
+
+- name: Resistance
+  level: 0
+  school: Abjuration
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a miniature cloak)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Spare the Dying
+  level: 0
+  school: Necromancy
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Thorn Whip
+  level: 0
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a stem of a plant with thorns)
+  duration: Instantaneous
+  description:
+
+# ======================
+# ARTIFICER — LEVEL 1
+# ======================
+- name: Alarm
+  level: 1
+  school: Abjuration
+  classes: [Artificer]
+  casting_time: 1 Minute (Ritual)
+  range: 30 ft
+  components: V, S, M (a tiny bell and a piece of silver wire)
+  duration: 8 hours
+  description:
+
+- name: Catapult
+  level: 1
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 60 ft
+  components: S
+  duration: Instantaneous
+  description:
+
+- name: Cure Wounds
+  level: 1
+  school: Evocation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Detect Magic
+  level: 1
+  school: Divination
+  classes: [Artificer]
+  casting_time: 1 Action (Ritual)
+  range: Self
+  components: V, S
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Disguise Self
+  level: 1
+  school: Illusion
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Self
+  components: V, S
+  duration: 1 hour
+  description:
+
+- name: Expeditious Retreat
+  level: 1
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Bonus Action
+  range: Self
+  components: V, S
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Faerie Fire
+  level: 1
+  school: Evocation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: False Life
+  level: 1
+  school: Necromancy
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Self
+  components: V, S, M (a small amount of alcohol or distilled spirits)
+  duration: 1 hour
+  description:
+
+- name: Feather Fall
+  level: 1
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: Reaction
+  range: 60 ft
+  components: V, M (a small feather)
+  duration: 1 minute
+  description:
+
+- name: Grease
+  level: 1
+  school: Conjuration
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a bit of pork rind or butter)
+  duration: 1 minute
+  description:
+
+- name: Identify
+  level: 1
+  school: Divination
+  classes: [Artificer]
+  casting_time: 1 Minute (Ritual)
+  range: Touch
+  components: V, S, M (a pearl worth at least 100 gp and an owl feather)
+  duration: Instantaneous
+  description:
+
+- name: Jump
+  level: 1
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a grasshopper’s hind leg)
+  duration: 1 minute
+  description:
+
+- name: Longstrider
+  level: 1
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a pinch of dirt)
+  duration: 1 hour
+  description:
+
+- name: Purify Food and Drink
+  level: 1
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action (Ritual)
+  range: 10 ft
+  components: V, S
+  duration: Instantaneous
+  description:
+
+- name: Sanctuary
+  level: 1
+  school: Abjuration
+  classes: [Artificer]
+  casting_time: 1 Bonus Action
+  range: 30 ft
+  components: V, S, M (a small silver mirror)
+  duration: 1 minute
+  description:
+
+# ======================
+# ARTIFICER — LEVEL 2
+# ======================
+- name: Aid
+  level: 2
+  school: Abjuration
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 30 ft
+  components: V, S, M (a tiny strip of white cloth)
+  duration: 8 hours
+  description:
+
+- name: Alter Self
+  level: 2
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Self
+  components: V, S
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Blur
+  level: 2
+  school: Illusion
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Self
+  components: V
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Darkvision
+  level: 2
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (either a pinch of dried carrot or an agate)
+  duration: 8 hours
+  description:
+
+- name: Enhance Ability
+  level: 2
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (fur or a feather from a beast)
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Heat Metal
+  level: 2
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (a piece of iron and a flame)
+  duration: Concentration, up to 1 minute
+  description:
+
+- name: Invisibility
+  level: 2
+  school: Illusion
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (an eyelash encased in gum arabic)
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Levitate
+  level: 2
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: 60 ft
+  components: V, S, M (either a small leather loop or a piece of golden wire)
+  duration: Concentration, up to 10 minutes
+  description:
+
+- name: Magic Weapon
+  level: 2
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Bonus Action
+  range: Touch
+  components: V, S
+  duration: Concentration, up to 1 hour
+  description:
+
+- name: Rope Trick
+  level: 2
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (powdered corn extract and a twisted loop of parchment)
+  duration: 1 hour
+  description:
+
+- name: Spider Climb
+  level: 2
+  school: Transmutation
+  classes: [Artificer]
+  casting_time: 1 Action
+  range: Touch
+  components: V, S, M (a drop of bitumen and a spider)
+  duration: Concentration, up to 1 hour
+  description:
