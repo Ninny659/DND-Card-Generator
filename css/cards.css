@@ -7,7 +7,7 @@
     border-radius: var(--card-border-radius);
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #fbf8ef 0%, #f3ead1 100%);
+    background: linear-gradient(180deg, #f8f9ef 0%, #f3ead1 100%);
     border: 3px double #3a2f2f;
     overflow: hidden;
     cursor: pointer;
@@ -15,8 +15,8 @@
 }
 
 .card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Backing card overrides */
