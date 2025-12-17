@@ -2,13 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Spell Card Generator</title>
+        <title>DND Card Generator</title>
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/cards.css">
         <link rel="stylesheet" href="css/controls.css">
     </head>
     <body>
-        <h2>Spell Card Generator — A4 (3x3 cards per page)</h2>
+        <h2>DND Card Generator — A4 (3x3 cards per page)</h2>
 
         <!-- Tab Navigation -->
         <div class="tab-nav">
@@ -66,8 +66,12 @@
 
         <!-- Preview Area (shared between tabs) -->
         <div style="margin-top:14px">
-            <strong>Preview (drag to reorder cards, right-click to edit)</strong>
-            <div id="previewArea" class="preview-container"></div>
+            <strong>Preview (drag to reorder cards, right-click cards to edit or right-click the preview area to create a new card)</strong>
+            <div id="previewArea" class="preview-container">
+                <div id="selectable-previewArea" class="preview-container">
+
+                </div>
+            </div>
         </div>
 
         <!-- External Libraries -->
