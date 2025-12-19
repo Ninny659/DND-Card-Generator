@@ -1,41 +1,57 @@
 /* Controls and UI Elements */
 .controls {
-    margin: 10px 0 18px;
+    margin: 16px 0 24px;
 }
 
 .controls button {
     margin-right: 8px;
-    padding: 8px 16px;
-    background: white;
-    border: 2px solid #ddd;
-    border-radius: 4px;
+    padding: 10px 20px;
+    background: #ffffff;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    color: #374151;
 }
 
 .controls button:hover {
-    background: #f2f2f2;
-    border-color: #999;
+    background: #f9fafb;
+    border-color: #6b7280;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls button:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+.controls button:active {
+    transform: translateY(0);
 }
 
 .controls label {
-    margin-left: 10px;
+    margin-left: 16px;
     margin-right: 8px;
+    font-weight: 500;
+    color: #374151;
 }
 
 /* Class Selection */
 .class_select {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 #class_options,
 #class_options_import {
     list-style: none;
     padding: 0;
-    margin: 8px 0;
+    margin: 12px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
 #class_options li,
@@ -47,79 +63,102 @@
 #class_options_import label {
     display: inline-flex;
     align-items: center;
-    padding: 6px 12px;
-    border: 2px solid #ddd;
-    border-radius: 20px;
+    padding: 8px 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 24px;
     cursor: pointer;
-    transition: all 0.2s;
-    background: white;
+    transition: all 0.2s ease;
+    background: #ffffff;
+    font-weight: 500;
+    color: #374151;
 }
 
 #class_options input[type="checkbox"],
 #class_options_import input[type="checkbox"] {
-    margin-right: 6px;
+    margin-right: 8px;
     cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #3b82f6;
 }
 
 #class_options label:hover,
 #class_options_import label:hover {
-    border-color: #999;
-    background: #f9f9f9;
+    border-color: #6b7280;
+    background: #f9fafb;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+#class_options label:focus-within,
+#class_options_import label:focus-within {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+#class_options input[type="checkbox"]:checked ~ span,
+#class_options_import input[type="checkbox"]:checked ~ span {
+    font-weight: 600;
+    color: #1e40af;
 }
 
 #class_options input[type="checkbox"]:checked + span,
 #class_options_import input[type="checkbox"]:checked + span {
-    font-weight: bold;
+    font-weight: 600;
+    color: #1e40af;
 }
 
-.type_select {
-    margin-bottom: 10px;
+.checkbox {
+    margin-bottom: 16px;
 }
 
-.type_select ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.checkbox input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #3b82f6;
+    cursor: pointer;
 }
 
-.type_select li {
-    display: inline-block;
+.checkbox input[type="checkbox"]:checked ~ span {
+    font-weight: 600;
+    color: #1e40af;
 }
 
-.type_select label {
-    border-radius: 3px;
-}
-
-.type_select input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-.level_select ul {    
+.checkbox ul {    
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: 5rem 5rem 5rem 5rem 5rem;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
     gap: 10px;
+    max-width: 600px;
 }
 
 .create-card-btn {
-    padding: 8px 16px;
-    background: #28a745;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background 0.2s;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
 }
 
 .create-card-btn:hover {
-    background: #218838;
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+}
+
+.create-card-btn:focus {
+    outline: 2px solid #10b981;
+    outline-offset: 2px;
 }
 
 .create-card-btn:active {
-    background: #1e7e34;
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(16, 185, 129, 0.2);
 }
