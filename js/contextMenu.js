@@ -4,6 +4,7 @@ const ContextMenu = {
     currentCard: null,
     currentSpell: null,
     currentCardType: 'spell',
+    selectedCards: null,
 
     /**
      * Create context menu element
@@ -35,8 +36,13 @@ const ContextMenu = {
         e.preventDefault();
 
         this.currentCard = card;
-        this.currentSpell = data; // Keep the name for backward compatibility
+        this.currentSpell = data;
         this.currentCardType = cardType;
+
+        // Check if this card is part of a multi-selection
+        this.selectedCards = selectedCards.has(card) && selectedCards.size > 1
+            ? Array.from(selectedCards)
+            : null;
 
         const menu = this.create();
         menu.innerHTML = '';
@@ -44,38 +50,50 @@ const ContextMenu = {
         // Get existing field keys from the card
         const existingFields = this.getExistingFields();
 
-        // Add field option with submenu
-        const addFieldItem = this.createMenuItem('+ Add Field ▶');
-        const addSubmenu = this.createAddFieldSubmenu(existingFields);
-        addFieldItem.appendChild(addSubmenu);
-        this.attachSubmenuBehavior(addFieldItem, addSubmenu);
-        menu.appendChild(addFieldItem);
+        // Only show field operations for single card
+        if (!this.selectedCards) {
+            // Add field option with submenu
+            const addFieldItem = this.createMenuItem('+ Add Field ▶');
+            const addSubmenu = this.createAddFieldSubmenu(existingFields);
+            addFieldItem.appendChild(addSubmenu);
+            this.attachSubmenuBehavior(addFieldItem, addSubmenu);
+            menu.appendChild(addFieldItem);
 
-        // Only show edit/remove if there are fields to edit
-        if (existingFields.length > 0) {
-            // Separator
+            // Only show edit/remove if there are fields to edit
+            if (existingFields.length > 0) {
+                // Separator
+                menu.appendChild(this.createSeparator());
+
+                // Edit field option with submenu
+                const editFieldItem = this.createMenuItem('✏️ Edit Field ▶');
+                const editSubmenu = this.createEditSubmenu(existingFields);
+                editFieldItem.appendChild(editSubmenu);
+                this.attachSubmenuBehavior(editFieldItem, editSubmenu);
+                menu.appendChild(editFieldItem);
+
+                // Remove field option with submenu
+                const removeFieldItem = this.createMenuItem('🗑️ Remove Field ▶');
+                const removeSubmenu = this.createRemoveSubmenu(existingFields);
+                removeFieldItem.appendChild(removeSubmenu);
+                this.attachSubmenuBehavior(removeFieldItem, removeSubmenu);
+                menu.appendChild(removeFieldItem);
+            }
+
+            // Separator before card operations
             menu.appendChild(this.createSeparator());
-
-            // Edit field option with submenu
-            const editFieldItem = this.createMenuItem('✏️ Edit Field ▶');
-            const editSubmenu = this.createEditSubmenu(existingFields);
-            editFieldItem.appendChild(editSubmenu);
-            this.attachSubmenuBehavior(editFieldItem, editSubmenu);
-            menu.appendChild(editFieldItem);
-
-            // Remove field option with submenu
-            const removeFieldItem = this.createMenuItem('🗑️ Remove Field ▶');
-            const removeSubmenu = this.createRemoveSubmenu(existingFields);
-            removeFieldItem.appendChild(removeSubmenu);
-            this.attachSubmenuBehavior(removeFieldItem, removeSubmenu);
-            menu.appendChild(removeFieldItem);
+        } else {
+            // Show multi-selection header
+            const header = document.createElement('div');
+            header.textContent = `${this.selectedCards.length} cards selected`;
+            header.style.cssText = 'padding: 8px 12px; font-weight: bold; border-bottom: 1px solid #ddd;';
+            menu.appendChild(header);
         }
 
-        // Separator before card operations
-        menu.appendChild(this.createSeparator());
-
-        // Change color option
-        const colorItem = this.createMenuItem('🎨 Change Border Color');
+        // Change color option (works for single or multiple)
+        const colorText = this.selectedCards
+            ? `🎨 Change Color (${this.selectedCards.length} cards)`
+            : '🎨 Change Border Color';
+        const colorItem = this.createMenuItem(colorText);
         colorItem.onclick = () => {
             this.changeBorderColor();
             this.hide();
@@ -85,24 +103,29 @@ const ContextMenu = {
         // Separator before card operations
         menu.appendChild(this.createSeparator());
 
-        // Create card option
-        const createCardItem = this.createMenuItem('🔨 Create Card ▶');
-        const createCardItemSubmenu = this.createAddCardSubmenu(CARD_TYPES);
-        createCardItem.appendChild(createCardItemSubmenu);
-        this.attachSubmenuBehavior(createCardItem, createCardItemSubmenu);
-        menu.appendChild(createCardItem);
+        // Only show "Create Card" for single selection
+        if (!this.selectedCards) {
+            // Create card option
+            const createCardItem = this.createMenuItem('🔨 Create Card ▶');
+            const createCardItemSubmenu = this.createAddCardSubmenu(CARD_TYPES);
+            createCardItem.appendChild(createCardItemSubmenu);
+            this.attachSubmenuBehavior(createCardItem, createCardItemSubmenu);
+            menu.appendChild(createCardItem);
 
+            // Duplicate card option
+            const duplicateItem = this.createMenuItem('📋 Duplicate Card');
+            duplicateItem.onclick = () => {
+                this.duplicateCard();
+                this.hide();
+            };
+            menu.appendChild(duplicateItem);
+        }
 
-        // Duplicate card option
-        const duplicateItem = this.createMenuItem('📋 Duplicate Card');
-        duplicateItem.onclick = () => {
-            this.duplicateCard();
-            this.hide();
-        };
-        menu.appendChild(duplicateItem);
-
-        // Remove card option
-        const removeCardItem = this.createMenuItem('❌ Remove Card');
+        // Remove card option (works for single or multiple)
+        const removeText = this.selectedCards
+            ? `❌ Remove Cards (${this.selectedCards.length})`
+            : '❌ Remove Card';
+        const removeCardItem = this.createMenuItem(removeText);
         removeCardItem.onclick = () => {
             this.removeCard();
             this.hide();
@@ -516,21 +539,32 @@ const ContextMenu = {
      * Remove card
      */
     removeCard() {
-        if (!this.currentCard || !this.currentSpell) return;
+        const cardsToRemove = this.selectedCards || [this.currentCard];
+        if (cardsToRemove.length === 0) return;
 
-        if (!confirm('Remove this card?')) return;
+        const confirmMsg = cardsToRemove.length > 1
+            ? `Remove ${cardsToRemove.length} cards?`
+            : 'Remove this card?';
 
-        // Remove from allLoadedCards array
-        const index = allLoadedCards.findIndex(card =>
-            card._data === this.currentSpell ||
-            card._spell === this.currentSpell ||
-            (card._data && card._data.name === this.currentSpell.name) ||
-            (card._spell && card._spell.name === this.currentSpell.name)
-        );
+        if (!confirm(confirmMsg)) return;
 
-        if (index > -1) {
-            allLoadedCards.splice(index, 1);
-        }
+        // Remove all selected cards from allLoadedCards
+        cardsToRemove.forEach(card => {
+            const data = card._data || card._spell;
+            const index = allLoadedCards.findIndex(c =>
+                c._data === data ||
+                c._spell === data ||
+                (c._data && c._data.name === data.name) ||
+                (c._spell && c._spell.name === data.name)
+            );
+
+            if (index > -1) {
+                allLoadedCards.splice(index, 1);
+            }
+        });
+
+        // Clear selection
+        clearSelection();
 
         // Rebuild sheets
         filterDisplayedCards();
@@ -576,13 +610,16 @@ const ContextMenu = {
      * Change border color of card
      */
     changeBorderColor() {
-        if (!this.currentCard) return;
+        const cardsToChange = this.selectedCards || [this.currentCard];
+        if (cardsToChange.length === 0) return;
 
         const colorInput = document.createElement('input');
         colorInput.type = 'color';
-        colorInput.value = this.currentCard.style.borderColor || '#3a2f2f';
 
-        const currentColor = this.currentCard.style.borderColor;
+        // Use first card's color as initial value
+        colorInput.value = cardsToChange[0].style.borderColor || '#3a2f2f';
+
+        const currentColor = cardsToChange[0].style.borderColor;
         if (currentColor && currentColor.startsWith('rgb')) {
             colorInput.value = this.rgbToHex(currentColor);
         }
@@ -592,7 +629,10 @@ const ContextMenu = {
         document.body.appendChild(colorInput);
 
         colorInput.addEventListener('change', (e) => {
-            this.currentCard.style.borderColor = e.target.value;
+            // Apply to all selected cards
+            cardsToChange.forEach(card => {
+                card.style.borderColor = e.target.value;
+            });
             colorInput.remove();
         });
 

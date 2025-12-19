@@ -3,12 +3,97 @@
 // Store all cards globally
 let allLoadedCards = [];
 
+let selectedCards = new Set();
+let lastClickedCard = null;
+
+function setupCardSelection() {
+    document.addEventListener('click', (e) => {
+        // Check if clicking on a card
+        const card = e.target.closest('.card');
+        if (!card || card.classList.contains('backing-card')) return;
+
+        // Ignore if right-clicking (context menu)
+        if (e.button === 2) return;
+
+        // Handle different selection modes
+        if (e.ctrlKey || e.metaKey) {
+            // Ctrl/Cmd: Toggle selection
+            toggleCardSelection(card);
+        } else if (e.shiftKey && lastClickedCard) {
+            // Shift: Range select
+            rangeSelectCards(lastClickedCard, card);
+        } else {
+            // Normal click: Select only this card
+            clearSelection();
+            selectCard(card);
+        }
+
+        lastClickedCard = card;
+    });
+
+    // Clear selection when clicking outside cards
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.card') && !e.target.closest('#cardContextMenu')) {
+            clearSelection();
+        }
+    });
+}
+
+function selectCard(card) {
+    selectedCards.add(card);
+    card.classList.add('selected');
+}
+
+function deselectCard(card) {
+    selectedCards.delete(card);
+    card.classList.remove('selected');
+}
+
+function toggleCardSelection(card) {
+    if (selectedCards.has(card)) {
+        deselectCard(card);
+    } else {
+        selectCard(card);
+    }
+}
+
+function clearSelection() {
+    selectedCards.forEach(card => {
+        card.classList.remove('selected');
+    });
+    selectedCards.clear();
+    lastClickedCard = null;
+}
+
+function rangeSelectCards(startCard, endCard) {
+    const allCards = Array.from(document.querySelectorAll('.card:not(.backing-card)'));
+    const startIndex = allCards.indexOf(startCard);
+    const endIndex = allCards.indexOf(endCard);
+
+    if (startIndex === -1 || endIndex === -1) return;
+
+    const [start, end] = [Math.min(startIndex, endIndex), Math.max(startIndex, endIndex)];
+
+    for (let i = start; i <= end; i++) {
+        selectCard(allCards[i]);
+    }
+}
+
 // Initialize on page load
 window.addEventListener('DOMContentLoaded', () => {
     ClassManager.initialize();
 
     initialiseLevelFilters();
     initialiseTypeFilters();
+
+    setupCardSelection();
+
+    const createCardBtn = document.getElementById('createCardBtn');
+    if (createCardBtn) {
+        createCardBtn.addEventListener('click', (e) => {
+            showCreateCardMenu(e);
+        });
+    }
 
     // Duplicate class options for import tab
     const importClassOptions = document.getElementById('class_options_import');
@@ -30,6 +115,92 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+/* Function to show the card type selection menu 
+*/
+function showCreateCardMenu(e) {
+    // Create a temporary menu
+    const menu = document.createElement('div');
+    menu.style.cssText = `
+        position: fixed;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 4px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        z-index: 10000;
+        min-width: 150px;
+    `;
+    
+    // Add card type options
+    CARD_TYPES.forEach(cardType => {
+        const item = document.createElement('div');
+        item.textContent = cardType.label;
+        item.style.cssText = 'padding: 8px 12px; cursor: pointer;';
+        item.onmouseover = () => item.style.background = '#f0f0f0';
+        item.onmouseout = () => item.style.background = 'white';
+        item.onclick = () => {
+            createNewCardFromButton(cardType);
+            document.body.removeChild(menu);
+        };
+        menu.appendChild(item);
+    });
+    
+    // Position menu near the button
+    const btnRect = e.target.getBoundingClientRect();
+    menu.style.left = btnRect.left + 'px';
+    menu.style.top = (btnRect.bottom + 5) + 'px';
+    
+    document.body.appendChild(menu);
+    
+    // Close menu when clicking elsewhere
+    const closeMenu = (event) => {
+        if (!menu.contains(event.target)) {
+            if (document.body.contains(menu)) {
+                document.body.removeChild(menu);
+            }
+            document.removeEventListener('click', closeMenu);
+        }
+    };
+    
+    // Delay adding the listener so this click doesn't immediately close it
+    setTimeout(() => {
+        document.addEventListener('click', closeMenu);
+    }, 10);
+}
+
+function createNewCardFromButton(cardType) {
+    // Prompt for card name
+    const name = prompt(`Enter name for new ${cardType.label}:`);
+    if (!name) return;
+
+    // Create base data object
+    const newData = {
+        name: name,
+        classes: []
+    };
+
+    // Add default values based on card type
+    if (cardType.key === 'spell') {
+        newData.level = 0;
+        newData.school = '';
+    } else if (cardType.key === 'weapon') {
+        newData.type = 'Weapon';
+        newData.damage = '';
+    } else if (cardType.key === 'armor') {
+        newData.type = 'Armor';
+        newData.armorClass = '';
+    }
+
+    // Create the card using CardGenerator
+    const newCard = CardGenerator.createCard(newData, cardType.key, cardType.fields);
+
+    // Add to allLoadedCards array
+    allLoadedCards.push(newCard);
+
+    // Rebuild sheets to include new card
+    filterDisplayedCards();
+}
 
 /**
  * Filter cards in preview based on selected classes
@@ -338,3 +509,4 @@ document.getElementById("class_options").addEventListener('click', () => {
         }
     }, 10);
 });
+

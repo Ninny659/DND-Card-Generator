@@ -185,9 +185,14 @@ const CardGenerator = {
             // Clone cards and re-attach event listeners
             pageCards.forEach(originalCard => {
                 const clone = originalCard.cloneNode(true);
-                clone._spell = originalCard._spell; // Preserve spell reference
-                clone._data = originalCard._data; // Preserve data reference
-                clone._cardType = originalCard._cardType; // Preserve card type
+                clone._spell = originalCard._spell;
+                clone._data = originalCard._data;
+                clone._cardType = originalCard._cardType;
+
+                // Preserve selected state
+                if (originalCard.classList.contains('selected')) {
+                    clone.classList.add('selected');
+                }
 
                 // Re-attach context menu listener
                 const data = clone._data || clone._spell;
