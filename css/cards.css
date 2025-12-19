@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, #f8f9ef 0%, #f3ead1 100%);
-    border: 1.5px solid #3a2f2f;
+    border: 2px solid #3a2f2f;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.1s;
