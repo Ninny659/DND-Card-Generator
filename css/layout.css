@@ -40,7 +40,7 @@ textarea:focus {
     display: flex;
     gap: 4px;
     margin-bottom: 24px;
-    border-bottom: 2px solid #e5e7eb;
+    border-bottom: 2px solid #6b7280  ;
     padding-bottom: 0;
 }
 
@@ -52,15 +52,14 @@ textarea:focus {
     cursor: pointer;
     font-size: 15px;
     font-weight: 500;
-    transition: all 0.2s ease;
-    color: #6b7280;
+    color: #2f2f2f;
     position: relative;
     bottom: -2px;
 }
 
 .tab-button:hover {
-    color: #374151;
-    background: #f9fafb;
+    background: #60a5fa83;
+    border: 2px solid #2f2f2f;
     border-radius: 6px 6px 0 0;
 }
 

@@ -4,12 +4,12 @@
 
 ### 1. Accessibility First
 - All interactive elements must have visible focus states
-- Maintain WCAG 2.1 AA color contrast ratios (4.5:1 for normal text)
+- Maintain WCAG 2.1 AA colour contrast ratios (4.5:1 for normal text)
 - Touch targets should be minimum 44x44px for mobile
 - Use semantic HTML and ARIA labels where appropriate
 
 ### 2. Consistency
-- Use the defined spacing scale, colors, and typography throughout
+- Use the defined spacing scale, colours, and typography throughout
 - Maintain consistent interaction patterns across components
 - Keep animation timing and easing uniform
 
@@ -20,27 +20,32 @@
 
 ---
 
-## 🎨 Color Palette
+## 🎨 Colour Palette
 
-### Neutral Grays (Primary)
+### Neutral Greys (Primary)
 ```css
---gray-50:  #f9fafb   /* Hover backgrounds */
---gray-100: #f3f4f6   /* Page background */
---gray-200: #e5e7eb   /* Borders (light) */
---gray-300: #d1d5db   /* Borders (default) */
---gray-400: #9ca3af   /* Disabled text */
---gray-500: #6b7280   /* Secondary text */
---gray-600: #4b5563   /* Body text (light) */
---gray-700: #374151   /* Body text */
---gray-800: #1f2937   /* Headings */
---gray-900: #111827   /* Emphasis text */
+--grey-100: #f3f4f6   /* Page background */
+--grey-200: #e5e7eb   /* Borders (light) */
+--grey-300: #d1d5db   /* Borders (default) */
+--grey-400: #9ca3af   /* Disabled text */
+--Custom Grey: #2f2f2f   /* Secondary text */
+--grey-600: #4b5563   /* Body text (light) */
+--grey-700: #374151   /* Body text */
+--grey-800: #1f2937   /* Headings */
+--grey-900: #111827   /* Emphasis text */
 ```
 
-### Brand Colors
+### Hover
+```css
+--blue-400 50% Opacity:  #60a5fa83   /* Hover backgrounds */
+--Custom Grey: #2F2F2F /* Text colour*/
+```
+
+### Tool Colours
 ```css
 /* Primary (Blue) - for focus, links, active states */
 --blue-400: #60a5fa
---blue-500: #3b82f6   /* Primary brand color */
+--blue-500: #3b82f6   /* Primary tool colour */
 --blue-700: #1d4ed8
 --blue-800: #1e40af   /* Selected text */
 
@@ -49,13 +54,6 @@
 --green-600: #059669
 --green-700: #047857
 ```
-
-### Usage Guidelines
-- **Gray-700** for body text
-- **Gray-800/900** for headings
-- **Gray-500** for secondary/muted text
-- **Blue-500** for focus indicators, links, active tabs
-- **Green gradient** for primary action buttons
 
 ---
 
@@ -125,12 +123,12 @@ background: #ffffff;
 border: 2px solid #d1d5db;
 border-radius: 6px;
 font-weight: 500;
-color: #374151;
+colour: #374151;
 transition: all 0.2s ease;
 ```
 
 **States:**
-- **Hover:** `background: #f9fafb; border-color: #6b7280; transform: translateY(-1px);`
+- **Hover:** `background: #f9fafb; border-colour: #6b7280; transform: translateY(-1px);`
 - **Focus:** `outline: 2px solid #3b82f6; outline-offset: 2px;`
 - **Active:** `transform: translateY(0);`
 
@@ -138,7 +136,7 @@ transition: all 0.2s ease;
 ```css
 padding: 12px 24px;
 background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-color: white;
+colour: white;
 border: none;
 border-radius: 6px;
 font-weight: 600;
@@ -153,7 +151,7 @@ box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
 ```css
 width: 18px;
 height: 18px;
-accent-color: #3b82f6;
+accent-colour: #3b82f6;
 cursor: pointer;
 ```
 
@@ -170,19 +168,19 @@ transition: all 0.2s ease;
 **States:**
 - **Hover:** Border darkens, lift effect, subtle shadow
 - **Focus-within:** Blue outline
-- **Checked:** Bold text with blue color
+- **Checked:** Bold text with blue colour
 
 ### Text Inputs & Textareas
 ```css
 border: 2px solid #d1d5db;
 border-radius: 6px;
 padding: 12px;
-transition: border-color 0.2s ease;
+transition: border-colour 0.2s ease;
 ```
 
 **Focus state:**
 ```css
-border-color: #3b82f6;
+border-colour: #3b82f6;
 box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 outline: none;
 ```
@@ -250,8 +248,8 @@ box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
 ## 🎯 Component Patterns
 
 ### Tab Navigation
-- Underline active tab with brand color
-- Keep inactive tabs muted (gray-500)
+- Underline active tab with tool colour
+- Keep inactive tabs muted (grey-500)
 - Use transparent background for modern look
 - 12px vertical padding, 24px horizontal
 
@@ -262,7 +260,7 @@ box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
 - Checked: bold text + blue accent
 
 ### Cards & Containers
-- White background on colored page background
+- White background on coloured page background
 - 8px border-radius
 - Layered shadows for depth
 - 24px padding
@@ -280,7 +278,7 @@ box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
 - [ ] Minimum 44x44px (mobile)
 - [ ] Adequate spacing between clickable elements
 
-### Color Contrast
+### Colour Contrast
 - [ ] Body text: 4.5:1 minimum
 - [ ] UI text: 4.5:1 minimum
 - [ ] Icons/graphics: 3:1 minimum
@@ -315,7 +313,7 @@ Use BEM or similar methodology:
 - Use browser DevTools accessibility inspector
 - Test with keyboard only
 - Test with screen reader
-- Check color contrast ratios
+- Check colour contrast ratios
 
 ### 5. Progressive Enhancement
 ```css
@@ -354,7 +352,7 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 ### Common Hover State
 ```css
 element:hover {
-    border-color: #6b7280;
+    border-colour: #6b7280;
     background: #f9fafb;
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
@@ -376,12 +374,12 @@ element:focus {
     border: 2px solid #d1d5db;
     border-radius: 6px;
     font-size: 14px;
-    transition: border-color 0.2s ease;
+    transition: border-colour 0.2s ease;
 }
 
 .form-control:focus {
     outline: none;
-    border-color: #3b82f6;
+    border-colour: #3b82f6;
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 ```
@@ -392,7 +390,7 @@ element:focus {
 
 - **WCAG Guidelines:** https://www.w3.org/WAI/WCAG21/quickref/
 - **Contrast Checker:** https://webaim.org/resources/contrastchecker/
-- **Color Palette Generator:** https://coolors.co/
+- **Colour Palette Generator:** https://coolors.co/
 - **CSS Tricks:** https://css-tricks.com/
 
 ---
