@@ -106,3 +106,22 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+
+.create-card-btn {
+    padding: 8px 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.create-card-btn:hover {
+    background: #218838;
+}
+
+.create-card-btn:active {
+    background: #1e7e34;
+}
