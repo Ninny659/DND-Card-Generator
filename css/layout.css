@@ -151,6 +151,15 @@ textarea:focus {
         width: 210mm;
         height: 297mm;
     }
+
+    #previewHeader {
+        display: none !important;
+    }
+    
+    /* Show only preview area */
+    body > *:not(div:has(#previewArea)) {
+        display: none !important;
+    }
     
     /* Hide everything except sheets */
     body > *:not(#previewArea) {

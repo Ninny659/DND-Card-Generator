@@ -510,3 +510,12 @@ document.getElementById("class_options").addEventListener('click', () => {
     }, 10);
 });
 
+document.addEventListener('keydown', (e) => {
+    // Check for Ctrl+P (Windows/Linux) or Cmd+P (Mac)
+    if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+        e.preventDefault();
+        alert('Please use the "Download PDF" button to print your cards.');
+        return false;
+    }
+});
+
