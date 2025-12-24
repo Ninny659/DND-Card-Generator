@@ -485,6 +485,10 @@ document.querySelectorAll('.tab-button').forEach(button => {
             content.classList.remove('active');
         });
         document.getElementById(tabName).classList.add('active');
+
+        const previewAreaContainer = document.getElementById('previewHeader').parentElement;
+        if(tabName == 'settings') previewAreaContainer.classList.add('hidden');
+        else previewAreaContainer.classList.remove('hidden');
     });
 });
 
