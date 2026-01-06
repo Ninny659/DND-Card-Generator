@@ -485,6 +485,10 @@ document.querySelectorAll('.tab-button').forEach(button => {
             content.classList.remove('active');
         });
         document.getElementById(tabName).classList.add('active');
+
+        const previewAreaContainer = document.getElementById('previewHeader').parentElement;
+        if(tabName == 'settings') previewAreaContainer.classList.add('hidden');
+        else previewAreaContainer.classList.remove('hidden');
     });
 });
 
@@ -508,5 +512,14 @@ document.getElementById("class_options").addEventListener('click', () => {
             filterDisplayedCards();
         }
     }, 10);
+});
+
+document.addEventListener('keydown', (e) => {
+    // Check for Ctrl+P (Windows/Linux) or Cmd+P (Mac)
+    if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+        e.preventDefault();
+        alert('Please use the "Download PDF" button to print your cards.');
+        return false;
+    }
 });
 
