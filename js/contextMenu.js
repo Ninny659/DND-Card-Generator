@@ -189,9 +189,13 @@ const ContextMenu = {
 
         if (cardType === 'weapon') {
             return WEAPON_FIELDS;
-        } else if (cardType === 'armor') {
+        } else if (cardType === 'armour') {
             return ARMOR_FIELDS;
-        } else {
+        } 
+        else if (cardType === 'item'){
+            return OTHER_FIELDS;
+        }
+        else {
             return AVAILABLE_FIELDS; // Default to spell fields
         }
     },

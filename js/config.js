@@ -108,7 +108,7 @@ const WEAPON_FIELDS = [
 ];
 
 // For armor cards
-const ARMOR_FIELDS = [
+const ARMOUR_FIELDS = [
     { key: 'armorClass', label: 'Armour Class' },
     { key: 'type', label: 'Armour Type' },
     { key: 'stealthDisadvantage', label: 'Stealth Disadvantage' },
@@ -117,10 +117,20 @@ const ARMOR_FIELDS = [
     { key: 'description', label: 'Description', isLongText: true }
 ];
 
+const OTHER_FIELDS = [
+    { key: 'weight', label: 'Weight' },
+    { key: 'attunement', label: 'Attunement' },
+    { key: 'properties', label: 'Properties' },
+    { key: 'casting_time', label: 'Casting Time' },
+    { key: 'description', label: 'Description', isLongText: true }
+];
+
+
 const CARD_TYPES = [
     { key: 'spell', label: 'Spell', fields: CARD_FIELDS },
     { key: 'weapon', label: 'Weapon', fields: WEAPON_FIELDS },
-    { key: 'armor', label: 'Armor', fields: ARMOR_FIELDS }
+    { key: 'armour', label: 'Armour', fields: ARMOUR_FIELDS },
+    { key: 'item', label: 'Item', fields: OTHER_FIELDS }
 ];
 
 const EXAMPLE_SPELLS = `

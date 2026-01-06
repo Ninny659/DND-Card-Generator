@@ -1,27 +1,32 @@
-/* Card Styles */
+/* Card Styles - Optimized for Print and Content Density */
 .card {
     width: var(--card-w-mm);
     height: var(--card-h-mm);
     box-sizing: border-box;
-    padding: 6px;
+    padding: 3mm;
     border-radius: var(--card-border-radius);
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #fbf8ef 0%, #f3ead1 100%);
-    border: 3px double #3a2f2f;
+    background: linear-gradient(180deg, #f8f9ef 0%, #f3ead1 100%);
+    border: 2px solid #3a2f2f;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.1s;
+    page-break-inside: avoid;
+    line-height: 1.2;
 }
 
 .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 /* Backing card overrides */
 .backing-card {
     background: none !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     padding: 0 !important;
     cursor: default !important;
 }
@@ -31,65 +36,119 @@
     box-shadow: none !important;
 }
 
+/* Typography - Optimized for maximum content */
 .title {
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 4px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
-    padding-bottom: 4px;
+    margin-bottom: 1.5mm;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 1mm;
+    line-height: 1.1;
+}
+
+.cardtext{
+    font-size: 10pt;
 }
 
 .class-line {
-    font-size: 6pt;
+    font-size: 7.5pt;
     text-align: center;
-    margin: 6px 0;
+    margin: 1mm 0;
+    line-height: 1.1;
 }
 
 .badge {
     display: inline-block;
-    padding: 2px 6px;
-    border-radius: 3px;
+    padding: 0.5px 3px;
+    border-radius: 2px;
     font-size: 8pt;
-    margin: 0 2px;
-    background: rgba(0, 0, 0, 0.05);
+    margin: 0 1px;
+    background: rgba(0, 0, 0, 0.08);
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .subtitle {
-    font-size: 8pt;
+    font-size: 7.5pt;
     text-align: center;
     font-style: italic;
-    margin-bottom: 6px;
+    margin-bottom: 1.5mm;
+    line-height: 1.1;
 }
 
 .section-label {
     font-size: 9pt;
     font-weight: 700;
-    margin-top: 6px;
+    margin-top: 1.5mm;
+    margin-bottom: 0.5mm;
+    line-height: 1.1;
 }
 
 .section-text {
     font-size: 7pt;
+    line-height: 1.2;
+    margin-bottom: 0.8mm;
 }
 
 .text {
     font-size: 8pt;
     flex: 1;
-    overflow: auto;
+    overflow: hidden;
+    line-height: 1.2;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
-.backing-card {
-    background: none !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+/* Content optimization */
+.text p {
+    margin: 0.3mm 0;
 }
 
+.text ul, .text ol {
+    margin: 0.3mm 0;
+    padding-left: 2.5mm;
+}
+
+.text li {
+    margin-bottom: 0.3mm;
+}
+
+/* Card selected */
+.card.selected {
+    outline: 2px solid rgb(59, 131, 246);
+}
+
+/* Print optimizations */
+@media print {
+    .card {
+        transform: none !important;
+        box-shadow: none !important;
+        border: 1.5px solid #3a2f2f !important;
+        page-break-inside: avoid !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    .card:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+    
+    .card.selected {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    
+    /* Ensure text is crisp and readable */
+    .title, .subtitle, .section-label, .section-text, .text, .badge, .class-line {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+}
+
+/* Backing sheet layering */
 .backing-sheet {
     z-index: 1;
-}
-
-.card.selected {
-    outline: 3px solid #007bff;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }

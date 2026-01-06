@@ -114,6 +114,7 @@ const CardGenerator = {
                 fieldValue.className = 'text';
                 fieldValue.innerHTML = (value || '').replace(/\n/g, '<br>');
             } else {
+                fieldValue.className = 'cardtext';
                 fieldValue.innerText = value || '—';
             }
 
