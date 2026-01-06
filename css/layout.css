@@ -1,8 +1,8 @@
 :root {
-    --card-w-mm: 65mm;
+    --card-w-mm: 67mm;
     --card-h-mm: 90mm;
     --card-border-radius: 8px;
-    --gap-mm: 4mm;
+    --gap-mm: 2mm;
 }
 
 body {
