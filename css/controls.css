@@ -143,10 +143,10 @@
 .checkbox  > label {
     display: block;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.25em;
     text-decoration: underline;
     margin-bottom: 12px;
-    color: #111827;
+    color: #222;
 }
 
 .create-card-btn {
@@ -176,4 +176,44 @@
 
 .create-card-btn:active {
     box-shadow: 0 1px 2px rgba(16, 185, 129, 0.2);
+}
+
+.collapsible {
+  background-color: #cecece;
+  color: #222;
+  cursor: pointer;
+  padding: 1.25em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
+  margin: 1em 0 0 0;
+  border-radius: .5rem;
+}
+
+.content{
+  padding: 0 1.25rem;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.collapsible:after {
+  content: '^'; 
+  font-size: 1em;
+  color: #326297;
+  border-radius: 50%;
+  top: 50%;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible.active:after {
+  content: "v"; 
 }

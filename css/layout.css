@@ -126,6 +126,10 @@ textarea {
     margin-bottom: 0;
 }
 
+.seperator {
+    border-bottom: 1px #1f2937;
+}
+
 @media print {
     @page {
         size: A4;

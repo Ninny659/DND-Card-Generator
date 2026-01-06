@@ -21,8 +21,6 @@
     <div class="tab-content active" id="editor">
       <div class="controls">
         <button id="downloadPdf">Download PDF</button>
-        <button id="saveCards">Save Cards</button>
-        <button id="loadSavedCards">Load Saved Cards</button>
         <label for="backingFile">Upload back image 63x88mm</label>
         <input
           type="file"
@@ -43,33 +41,55 @@
 
       <div class="checkbox">
         <label for="level_options">Filter by level</label>
-        <ul id="level_options">
-        </ul>
+        <ul id="level_options"></ul>
       </div>
 
       <div class="checkbox">
         <label for="type_options">Filter by card type</label>
-        <ul id="type_options">
-        </ul>
+        <ul id="type_options"></ul>
       </div>
     </div>
 
     <!-- Import/Export Tab -->
     <div class="tab-content" id="import">
-      <div class="controls">
-        <button id="loadExample">Load class spells</button>
+      <button type="button" class="collapsible">Load cards from a YAML file based on class checkboxes.</button>
+      <div class="content">
+        <div class="controls">
+          <button id="loadExample">Load class spells</button>
+          <label for="class_options_import"
+            >Load cards by classes from YAML</label
+          >
+          <ul id="class_options_import"></ul>
+        </div>
+
+        <textarea
+          id="yamlInput"
+          placeholder="Paste YAML array of spells here"
+          style="width: 100%; height: 400px"
+        ></textarea>
       </div>
 
-      <div class="class_select">
-        <label for="class_options_import">Load cards by classes</label>
-        <ul id="class_options_import"></ul>
+      <div class="checkbox controls">
+        <label style="margin: 1rem 0">Load and save cards controls</label>
+        <button id="saveCards">Save Cards</button>
+        <button id="loadSavedCards">Load Saved Cards</button>
       </div>
 
-      <textarea
-        id="yamlInput"
-        placeholder="Paste YAML array of spells here"
-        style="width: 100%; height: 400px"
-      ></textarea>
+      <div class="checkbox controls">
+        <label style="margin: 1rem 0 0 0">Autofill from DND API</label>
+        <label
+          for=""
+          style="
+            font-size: 1em;
+            font-weight: 500;
+            margin: 0;
+            text-decoration: none;
+          "
+          >The system will try to automatically fill with data that is available
+          from the API when you select one or more cards.</label
+        >
+        <button style="margin: 1rem 0" id="loadFromAPI">Autofill cards</button>
+      </div>
     </div>
 
     <!-- Settings Tab -->
