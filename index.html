@@ -23,17 +23,6 @@
         <button id="downloadPdf">Download PDF</button>
         <button id="saveCards">Save Cards</button>
         <button id="loadSavedCards">Load Saved Cards</button>
-        <label for="backingFile">Upload back image 63x88mm</label>
-        <input
-          type="file"
-          id="backingFile"
-          name="filename"
-          accept="image/png, image/jpeg"
-        />
-        <label>
-          <input type="checkbox" id="mirrorBacking" />
-          Mirror backing for flip printing
-        </label>
       </div>
 
       <div class="class_select">
@@ -43,14 +32,12 @@
 
       <div class="checkbox">
         <label for="level_options">Filter by level</label>
-        <ul id="level_options">
-        </ul>
+        <ul id="level_options"></ul>
       </div>
 
       <div class="checkbox">
         <label for="type_options">Filter by card type</label>
-        <ul id="type_options">
-        </ul>
+        <ul id="type_options"></ul>
       </div>
     </div>
 
@@ -73,7 +60,28 @@
     </div>
 
     <!-- Settings Tab -->
-    <div class="tab-content" id="settings"></div>
+    <div class="tab-content" id="settings">
+      <div class="controls">
+        <h3>Card Layout</h3>
+        <label>
+          <input type="checkbox" id="gridLayoutToggle" checked />
+          Use 2-column grid layout for fields
+        </label>
+
+        <h3 style="margin-top: 20px">Card Backing</h3>
+        <label for="backingFileSettings">Upload back image 63x88mm</label>
+        <input
+          type="file"
+          id="backingFileSettings"
+          name="filename"
+          accept="image/png, image/jpeg"
+        />
+        <label style="margin-top: 10px">
+          <input type="checkbox" id="mirrorBackingSettings" />
+          Mirror backing for flip printing
+        </label>
+      </div>
+    </div>
 
     <div style="margin-top: 14px">
       <div
