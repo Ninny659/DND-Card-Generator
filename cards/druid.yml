@@ -1,480 +1,1371 @@
-# ======================
-# DRUID — CANTRIPS
-# ======================
-- name: Control Flames
-  level: 0
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 60 ft
-  components: S
-  duration: Instantaneous
-  description:
-
-- name: Create Bonfire
-  level: 0
-  school: Conjuration
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 60 ft
-  components: V, S
-  duration: Concentration, up to 1 minute
-  description:
-
-- name: Druidcraft
-  level: 0
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 30 ft
-  components: V, S
-  duration: Instantaneous
-  description:
-
-- name: Frostbite
-  level: 0
-  school: Evocation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 60 ft
-  components: V, S
-  duration: Instantaneous
-  description:
-
-- name: Guidance
-  level: 0
-  school: Divination
-  classes: [Druid]
-  casting_time: 1 Action
-  range: Touch
-  components: V, S
-  duration: Concentration, up to 1 minute
-  description:
-
-- name: Infestation
-  level: 0
-  school: Conjuration
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 30 ft
-  components: V, S, M (a living flea)
-  duration: Instantaneous
-  description:
-
-- name: Magic Stone
-  level: 0
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Bonus Action
-  range: Touch
-  components: V, S
-  duration: 1 minute
-  description:
-
-- name: Mending
-  level: 0
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Minute
-  range: Touch
-  components: V, S, M (two lodestones)
-  duration: Instantaneous
-  description:
-
-- name: Mold Earth
-  level: 0
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 30 ft
-  components: S
-  duration: Instantaneous
-  description:
-
-- name: Poison Spray
-  level: 0
-  school: Conjuration
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 10 ft
-  components: V, S
-  duration: Instantaneous
-  description:
-
-- name: Produce Flame
-  level: 0
-  school: Conjuration
-  classes: [Druid]
-  casting_time: 1 Action
-  range: Self (30 ft throw)
-  components: V, S
-  duration: 10 minutes
-  description:
-
-- name: Resistance
-  level: 0
-  school: Abjuration
-  classes: [Druid]
-  casting_time: 1 Action
-  range: Touch
-  components: V, S, M (a miniature cloak)
-  duration: Concentration, up to 1 minute
-  description:
-
-- name: Shape Water
-  level: 0
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 30 ft
-  components: S
-  duration: Instantaneous
-  description:
-
-- name: Shillelagh
-  level: 0
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Bonus Action
-  range: Touch
-  components: V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)
-  duration: 1 minute
-  description:
-
-- name: Thorn Whip
-  level: 0
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 30 ft
-  components: V, S, M (a stem of a thorned plant)
-  duration: Instantaneous
-  description:
-
-
-# ======================
-# DRUID — LEVEL 1
-# ======================
 - name: Animal Friendship
   level: 1
   school: Enchantment
   classes: [Druid]
-  casting_time: 1 Action
-  range: 30 ft
-  components: V, S, M (a morsel of food)
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S, M (A morsel of food.)
   duration: 24 hours
-  description:
+  description: |
+    Choose a visible beast within range that can see and hear you. If its Intelligence is 4+, spell fails. Otherwise, beast makes Wisdom save or is charmed for duration. Spell ends if you or companions harm target.
 
-- name: Charm Person
-  level: 1
+- name: Animal Messenger
+  level: 2
   school: Enchantment
   classes: [Druid]
-  casting_time: 1 Action
-  range: 30 ft
-  components: V, S
-  duration: 1 hour
-  description:
-
-- name: Create or Destroy Water
-  level: 1
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 30 ft
-  components: V, S, M (a drop of water for create / a few grains of sand for destroy)
-  duration: Instantaneous
-  description:
-
-- name: Cure Wounds
-  level: 1
-  school: Evocation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: Touch
-  components: V, S
-  duration: Instantaneous
-  description:
-
-- name: Detect Magic
-  level: 1
-  school: Divination
-  classes: [Druid]
-  casting_time: 1 Action (Ritual)
-  range: Self
-  components: V, S
-  duration: Concentration, up to 10 minutes
-  description:
-
-- name: Detect Poison and Disease
-  level: 1
-  school: Divination
-  classes: [Druid]
-  casting_time: 1 Action (Ritual)
-  range: Self
-  components: V, S, M (a yew leaf)
-  duration: Concentration, up to 10 minutes
-  description:
-
-- name: Entangle
-  level: 1
-  school: Conjuration
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 90 ft
-  components: V, S
-  duration: Concentration, up to 1 minute
-  description:
-
-- name: Faerie Fire
-  level: 1
-  school: Evocation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 60 ft
-  components: V
-  duration: Concentration, up to 1 minute
-  description:
-
-- name: Fog Cloud
-  level: 1
-  school: Conjuration
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 120 ft
-  components: V, S
-  duration: Concentration, up to 1 hour
-  description:
-
-- name: Goodberry
-  level: 1
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: Touch
-  components: V, S, M (a sprig of mistletoe)
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S, M (A morsel of food.)
   duration: 24 hours
-  description:
+  description: |
+    Choose a Tiny beast within range. Specify a location you've visited and a general recipient description. Speak a 25-word message. Beast travels toward location (50 miles/day flying, 25 miles other) for duration, delivers message to matching creature, then returns if unsuccessful.
 
-- name: Healing Word
-  level: 1
-  school: Evocation
-  classes: [Druid]
-  casting_time: 1 Bonus Action
-  range: 60 ft
-  components: V
-  duration: Instantaneous
-  description:
-
-- name: Jump
-  level: 1
+- name: Animal Shapes
+  level: 8
   school: Transmutation
   classes: [Druid]
-  casting_time: 1 Action
-  range: Touch
-  components: V, S, M (a grasshopper’s hind leg)
-  duration: 1 minute
-  description:
-
-- name: Longstrider
-  level: 1
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: Touch
-  components: V, S, M (a pinch of dirt)
-  duration: 1 hour
-  description:
-
-- name: Purify Food and Drink
-  level: 1
-  school: Transmutation
-  classes: [Druid]
-  casting_time: 1 Action (Ritual)
-  range: 10 ft
+  casting_time: 1 action
+  range: 30 feet
   components: V, S
-  duration: Instantaneous
-  description:
+  duration: Up to 24 hours
+  description: |
+    Transform any number of willing creatures you see into Large or smaller beasts (CR 4 or lower). Lasts until 0 HP or duration ends. Targets retain alignment and mental scores, gain beast's stats and HP. Excess damage carries over. Can't speak or cast. Gear melds.
 
-- name: Speak with Animals
-  level: 1
-  school: Divination
+- name: Antilife Shell
+  level: 5
+  school: Abjuration
   classes: [Druid]
-  casting_time: 1 Action (Ritual)
+  casting_time: 1 action
   range: Self
   components: V, S
-  duration: 10 minutes
-  description:
+  duration: Up to 1 hour
+  description: |
+    A 10-foot radius barrier moves with you, blocking living creatures except undead and constructs. Affected creatures can't pass through but can cast spells or attack with ranged/reach weapons through it. Spell ends if you force creatures through barrier.
 
-- name: Thunderwave
-  level: 1
-  school: Evocation
+- name: Antipathy/Sympathy
+  level: 8
+  school: Enchantment
   classes: [Druid]
-  casting_time: 1 Action
-  range: Self (15 ft cube)
-  components: V, S
-  duration: Instantaneous
-  description:
+  casting_time: 1 hour
+  range: 60 feet
+  components: V, S, M (Either a lump of alum soaked in vinegar for the antipathy effect or a drop of honey for the sympathy effect.)
+  duration: 10 days
+  description: |
+    Target Huge or smaller object/creature or 200-foot cube area. Specify a creature type. Choose antipathy or sympathy.
+    
+    Antipathy: Designated creatures within 60 feet or that can see target make Wisdom save or become frightened. Must move to nearest safe spot where they can't see target. Frightened again if they see target or move within 60 feet.
+    
+    Sympathy: Designated creatures within 60 feet or that can see target make Wisdom save or must use movement to approach target. Can't willingly move away once reached.
+    
+    Harmed creatures can save to end effect. Creatures ending turn beyond 60 feet and unable to see target can save. Additional save every 24 hours. Success makes creature immune for 1 minute.
 
-
-# ======================
-# DRUID — LEVEL 2
-# ======================
-- name: Acid Arrow (Melf's)
-  level: 2
-  school: Evocation
-  classes: [Druid]
-  casting_time: 1 Action
-  range: 90 ft
-  components: V, S, M (powdered rhubarb leaf and an adder's stomach)
-  duration: Instantaneous
-  description:
-
-- name: Alter Self
-  level: 2
+- name: Awaken
+  level: 5
   school: Transmutation
   classes: [Druid]
-  casting_time: 1 Action
-  range: Self
-  components: V, S
-  duration: Concentration, up to 1 hour
-  description:
+  casting_time: 8 hours
+  range: Touch
+  components: V, S, M (An agate worth at least 1,000 gp, which the spell consumes.)
+  duration: Instantaneous
+  description: |
+    Touch a Huge or smaller beast or plant with Intelligence 3 or less. Target gains Intelligence 10 and speaks one language you know. Plants gain movement and human-like senses. Target is charmed for 30 days or until harmed. After charm ends, chooses friendliness based on treatment.
 
 - name: Barkskin
   level: 2
   school: Transmutation
   classes: [Druid]
-  casting_time: 1 Action
+  subclasses: [Lore, Land]
+  casting_time: 1 action
   range: Touch
-  components: V, S, M (a handful of oak bark)
-  duration: Concentration, up to 1 hour
-  description:
+  components: V, S, M (A handful of oak bark.)
+  duration: Up to 1 hour
+  description: |
+    Touch a willing creature. Target's skin becomes bark-like and AC can't be less than 16 regardless of armor worn until spell ends.
+
+- name: Blight
+  level: 4
+  school: Necromancy
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Creature makes Constitution save or takes 8d8 necrotic damage (half on success). No effect on undead/constructs. Plant creatures have disadvantage and take maximum damage. Nonmagical plants automatically wither and die without save.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.
+
+- name: Call Lightning
+  level: 3
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S
+  duration: Up to 10 minutes
+  description: |
+    Create a 60-foot radius, 10-foot tall storm cloud 100 feet above. Each turn as an action, call lightning to a point. Creatures within 5 feet make Dexterity save or take 3d10 lightning damage (half on success). If outdoors in storm, damage increases by 1d10.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.
+
+- name: Charm Person
+  level: 1
+  school: Enchantment
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S
+  duration: 1 hour
+  description: |
+    Target humanoid makes Wisdom save (advantage if you're fighting it) or is charmed until spell ends or until harmed. Charmed creature regards you as friendly acquaintance. When spell ends, creature knows it was charmed.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
+
+- name: Commune With Nature
+  level: 5
+  school: Divination
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 minute
+  range: Self
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Become one with nature and gain knowledge of surrounding territory. Outdoors: 3 miles. Caves/underground: 300 feet. Doesn't function in constructed areas.
+    
+    Learn up to three facts about: terrain and bodies of water; prevalent plants, minerals, animals, or peoples; powerful celestials, fey, fiends, elementals, or undead; influence from other planes; buildings.
+
+- name: Confusion
+  level: 4
+  school: Enchantment
+  classes: [Druid]
+  casting_time: 1 action
+  range: 90 feet
+  components: V, S, M (Three walnut shells.)
+  duration: Up to 1 minute
+  description: |
+    Creatures in 10-foot radius sphere make Wisdom save or are affected. Affected targets can't take reactions and roll d10 at start of each turn:
+    
+    1: Move randomly, no action.
+    2-6: No movement or actions.
+    7-8: Melee attack random creature in reach, or nothing.
+    9-10: Act normally.
+    
+    At end of each turn, affected target can save to end effect.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the radius increases by 5 feet for each slot level above 4th.
+
+- name: Conjure Animals
+  level: 3
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S
+  duration: Up to 1 hour
+  description: |
+    Summon fey-beasts: one CR 2, two CR 1, four CR 1/2, or eight CR 1/4. They're friendly, act on group initiative, obey verbal commands, and defend if not commanded. Disappear at 0 HP or when spell ends. GM provides statistics.
+  higher_level: At Higher Levels. When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.
+
+- name: Conjure Elemental
+  level: 5
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 minute
+  range: 90 feet
+  components: V, S, M (Burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water.)
+  duration: Up to 1 hour
+  description: |
+    Choose 10-foot cube of air, earth, fire, or water. Elemental (CR 5 or lower) appears within 10 feet. Friendly, acts on own initiative, obeys verbal commands, defends if not commanded.
+    
+    If concentration breaks: Elemental doesn't disappear but becomes hostile and might attack. Can't be dismissed. Disappears 1 hour after summoning. GM has statistics.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th.
+
+- name: Conjure Fey
+  level: 6
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 minute
+  range: 90 feet
+  components: V, S
+  duration: Up to 1 hour
+  description: |
+    Summon fey creature or fey spirit as beast (CR 6 or lower). Appears in unoccupied space. Friendly, acts on own initiative, obeys verbal commands that don't violate alignment, defends if not commanded.
+    
+    If concentration breaks: Fey doesn't disappear but becomes hostile and might attack. Can't be dismissed. Disappears 1 hour after summoning. GM has statistics.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th.
+
+- name: Conjure Minor Elementals
+  level: 4
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 minute
+  range: 90 feet
+  components: V, S
+  duration: Up to 1 hour
+  description: |
+    Summon elementals: one CR 2, two CR 1, four CR 1/2, or eight CR 1/4. They appear in unoccupied spaces, are friendly, act on group initiative, obey verbal commands, defend if not commanded. Disappear at 0 HP or spell end. GM provides statistics.
+  higher_level: At Higher Levels. When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 6th-level slot, and three times as many with an 8th-level slot.
+
+- name: Conjure Woodland Beings
+  level: 4
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S, M (One holly berry per creature summoned.)
+  duration: Up to 1 hour
+  description: |
+    Summon fey: one CR 2, two CR 1, four CR 1/2, or eight CR 1/4. Appear in unoccupied spaces, friendly, group initiative, obey verbal commands, defend if not commanded. Disappear at 0 HP or spell end. GM has statistics.
+  higher_level: At Higher Levels. When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear - twice as many with a 6th-level slot, and three times as many with an 8th-level slot.
+
+- name: Contagion
+  level: 5
+  school: Necromancy
+  classes: [Druid]
+  casting_time: 1 action
+  range: Touch
+  components: V, S
+  duration: 7 days
+  description: |
+    Melee spell attack to inflict disease. Target makes Constitution save at end of each turn. After three failures, disease lasts for duration. After three successes, recovers and spell ends.
+    
+    Blinding Sickness: Disadvantage on Wisdom checks/saves, blinded.
+    Filth Fever: Disadvantage on Strength checks/saves/attacks.
+    Flesh Rot: Disadvantage on Charisma checks, vulnerable to all damage.
+    Mindfire: Disadvantage on Intelligence checks/saves, acts as confusion in combat.
+    Seizure: Disadvantage on Dexterity checks/saves/attacks.
+    Slimy Doom: Disadvantage on Constitution checks/saves. When damaged, stunned until end of next turn.
+
+- name: Control Water
+  level: 4
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 300 feet
+  components: V, S, M (A drop of water and a pinch of dust.)
+  duration: Up to 10 minutes
+  description: |
+    Control water in 100-foot cube. Choose effect (can change as action each turn):
+    
+    Flood: Water rises 20 feet or create 20-foot wave. Wave carries/capsizes Huge or smaller vehicles (25% capsize chance).
+    
+    Part Water: Create trench. Water forms walls on sides.
+    
+    Redirect Flow: Water flows in chosen direction, even over obstacles/walls.
+    
+    Whirlpool (requires 50-foot square, 25-foot deep water): 5-foot base, 50-foot top vortex. Creatures/objects within 25 feet pulled 10 feet toward it. Strength (Athletics) check vs spell DC to swim away. Entering/starting turn: Strength save or take 2d8 bludgeoning and caught (half damage, not caught on success). Caught creatures can attempt escape (disadvantage). Objects take 2d8 each turn.
+
+- name: Control Weather
+  level: 8
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 10 minutes
+  range: Self
+  components: V, S, M (Burning incense and bits of earth and wood mixed in water.)
+  duration: Up to 8 hours
+  description: |
+    Control weather within 5 miles. Must be outdoors. Change precipitation, temperature, and wind. Takes 1d4×10 minutes for changes to take effect. Can change conditions again afterward.
+    
+    Change current condition by one stage up or down:
+    
+    Precipitation: 1-Clear, 2-Light clouds, 3-Overcast/fog, 4-Rain/hail/snow, 5-Torrential rain/driving hail/blizzard.
+    
+    Temperature: 1-Unbearable heat, 2-Hot, 3-Warm, 4-Cool, 5-Cold, 6-Arctic cold.
+    
+    Wind: 1-Calm, 2-Moderate, 3-Strong, 4-Gale, 5-Storm. Can change direction.
+
+- name: Create Food and Water
+  level: 3
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Create 45 pounds of food and 30 gallons of water, enough for fifteen humanoids or five steeds for 24 hours. Food is bland, spoils after 24 hours. Water is clean and doesn't spoil.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you create an additional 15 pounds of food and 10 gallons of water for each slot level above 3rd.
+
+- name: Create or Destroy Water
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S, M (A drop of water if creating water, or a few grains of sand if destroying it.)
+  duration: Instantaneous
+  description: |
+    Create: Make 10 gallons of clean water in a container or as rain in a 30-foot cube. Destroy: Destroy 10 gallons in a container or destroy fog in a 30-foot cube.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.
+
+- name: Cure Wounds
+  level: 1
+  school: Evocation
+  classes: [Druid]
+  subclasses: [Lore, Life]
+  casting_time: 1 action
+  range: Touch
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Touched creature regains 1d8 + spellcasting modifier hit points. No effect on undead or constructs.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
 
 - name: Darkvision
   level: 2
   school: Transmutation
   classes: [Druid]
-  casting_time: 1 Action
+  subclasses: [Lore]
+  casting_time: 1 action
   range: Touch
-  components: V, S, M (either a pinch of dried carrot or an agate)
+  components: V, S, M (Either a pinch of dried carrot or an agate.)
   duration: 8 hours
-  description:
+  description: |
+    Touch willing creature to grant darkvision 60 feet for duration.
+
+- name: Daylight
+  level: 3
+  school: Evocation
+  classes: [Druid]
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S
+  duration: 1 hour
+  description: |
+    60-foot radius bright light sphere, 60 feet additional dim light. If on held/uncarried object, light moves with it. Covering object blocks light. Dispels 3rd-level or lower darkness spells in overlapping area.
+
+- name: Detect Magic
+  level: 1
+  school: Divination
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Self
+  components: V, S
+  duration: Up to 10 minutes
+  description: |
+    Sense magic within 30 feet. Action to see aura around magical creatures/objects and learn school of magic. Penetrates most barriers but blocked by 1 foot stone, 1 inch metal, thin lead, or 3 feet wood/dirt.
+
+- name: Detect Poison and Disease
+  level: 1
+  school: Divination
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Self
+  components: V, S, M (A yew leaf.)
+  duration: Up to 10 minutes
+  description: |
+    Sense presence, location, and kind of poisons, poisonous creatures, and diseases within 30 feet. Blocked by 1 foot stone, 1 inch metal, thin lead sheet, or 3 feet wood/dirt.
+
+- name: Dispel Magic
+  level: 3
+  school: Abjuration
+  classes: [Druid]
+  subclasses: [Lore, Devotion]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Choose creature, object, or magical effect. Spells of 3rd level or lower end. For 4th+ level spells, make ability check using spellcasting ability vs DC 10 + spell level. Success ends spell.
+
+- name: Divination
+  level: 4
+  school: Divination
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 action
+  range: Self
+  components: V, S, M (Incense and a sacrificial offering appropriate to your religion, together worth at least 25gp, which the spell consumes.)
+  duration: Instantaneous
+  description: |
+    Contact a god or servants. Ask one question about a goal, event, or activity within 7 days. GM gives truthful reply (phrase, rhyme, or omen). Doesn't account for changing circumstances. 25% cumulative chance of random reading for each casting after first before next long rest.
+
+- name: Dominate Beast
+  level: 4
+  school: Enchantment
+  classes: [Druid]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S
+  duration: Up to 1 minute
+  description: |
+    Beast makes Wisdom save (advantage if you're fighting it) or is charmed. Telepathic link on same plane. Issue commands while conscious (no action). Can specify general course of action. Target defends itself if not commanded.
+    
+    Use action for total control until end of your next turn - creature takes only your chosen actions. Can use its reaction (costs your reaction).
+    
+    Each time target takes damage, new Wisdom save. Success ends spell.
+  higher_level: At Higher Levels. When you cast this spell using a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours.
+
+- name: Druidcraft
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Create one effect: predict weather for 24 hours (1 round duration); instantly bloom flower/seed/bud; create harmless 5-foot cube sensory effect (leaves, wind, animal sound, smell); instantly light or snuff candle, torch, or small campfire.
+
+- name: Earthquake
+  level: 8
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 500 feet
+  components: V, S, M (A pinch of dirt, a piece of rock, and a lump of clay.)
+  duration: Up to 1 minute
+  description: |
+    100-foot radius tremor. Difficult terrain. Concentrating creatures make Constitution save or lose concentration. When cast and at end of each turn: creatures make Dexterity save or knocked prone.
+    
+    Fissures: 1d6 fissures open at start of your next turn. Each 1d10×10 feet deep, 10 feet wide, edge to edge. Creatures on opening spot make Dexterity save or fall (success: move with edge).
+    
+    Structures: Take 50 bludgeoning when cast and at start of each turn. At 0 HP, collapse. Creatures within half structure's height make Dexterity save or take 5d6 bludgeoning, knocked prone, buried (DC 20 Strength (Athletics) to escape). Success: half damage, not prone/buried.
 
 - name: Enhance Ability
   level: 2
   school: Transmutation
   classes: [Druid]
-  casting_time: 1 Action
+  subclasses: [Lore]
+  casting_time: 1 action
   range: Touch
-  components: V, S, M (fur or a feather from a beast)
-  duration: Concentration, up to 1 hour
-  description:
+  components: V, S, M (Fur or a feather from a beast.)
+  duration: Up to 1 hour
+  description: |
+    Choose one enhancement for touched creature:
+    
+    Bear's Endurance: Advantage on Constitution checks. Gain 2d6 temporary HP (lost when spell ends).
+    Bull's Strength: Advantage on Strength checks. Carrying capacity doubles.
+    Cat's Grace: Advantage on Dexterity checks. No damage from falls 20 feet or less if not incapacitated.
+    Eagle's Splendor: Advantage on Charisma checks.
+    Fox's Cunning: Advantage on Intelligence checks.
+    Owl's Wisdom: Advantage on Wisdom checks.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+
+- name: Entangle
+  level: 1
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 90 feet
+  components: V, S
+  duration: Up to 1 minute
+  description: |
+    20-foot square becomes difficult terrain. Creatures in area make Strength save or are restrained. Restrained creatures can use action for Strength check vs spell DC to free themselves. Plants wilt when spell ends.
+
+- name: Faerie Fire
+  level: 1
+  school: Evocation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 60 feet
+  components: V
+  duration: Up to 1 minute
+  description: |
+    Objects in 20-foot cube outlined in colored light. Creatures in area make Dexterity save or are outlined. Outlined targets shed 10-foot dim light. Attacks against outlined targets have advantage, and they can't benefit from invisibility.
+
+- name: Feeblemind
+  level: 8
+  school: Enchantment
+  classes: [Druid]
+  casting_time: 1 action
+  range: 150 feet
+  components: V, S, M (A handful of clay, crystal, glass, or mineral spheres.)
+  duration: Instantaneous
+  description: |
+    Target takes 4d6 psychic damage and makes Intelligence save. On failure, Intelligence and Charisma become 1. Can't cast spells, activate items, understand language, or communicate intelligibly. Can identify and protect friends. Save every 30 days or ended by greater restoration, heal, or wish.
+
+- name: Find the Path
+  level: 6
+  school: Divination
+  classes: [Druid]
+  casting_time: 1 minute
+  range: Self
+  components: V, S, M (A set of divinatory tools--such as bones, ivory sticks, cards, teeth, or carved runes--worth 100gp and an object from the location you wish to find.)
+  duration: Up to 24 hours
+  description: |
+    Find shortest physical route to a specific fixed location on same plane. Spell fails for other planes, moving destinations, or non-specific locations. Know distance and direction. When presented with path choices, automatically determine shortest, most direct (not necessarily safest) route.
+
+- name: Find Traps
+  level: 2
+  school: Divination
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Sense presence of traps within line of sight. A trap is anything that would inflict sudden harmful/undesirable effect, specifically intended as such. Senses magical and mechanical traps but not natural hazards. Reveals trap presence and general danger nature, not exact location.
+
+- name: Fire Storm
+  level: 7
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 150 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Create up to ten 10-foot cubes of flame (each adjacent to another). Creatures make Dexterity save or take 7d10 fire damage (half on success). Damages and ignites objects. Plant life optionally unaffected.
 
 - name: Flame Blade
   level: 2
   school: Evocation
   classes: [Druid]
-  casting_time: 1 Bonus Action
+  subclasses: [Lore]
+  casting_time: 1 bonus action
   range: Self
-  components: V, S, M (leaf of sumac)
-  duration: Concentration, up to 10 minutes
-  description:
+  components: V, S, M (Leaf of sumac.)
+  duration: Up to 10 minutes
+  description: |
+    Fiery scimitar-like blade appears in free hand. Use action for melee spell attack dealing 3d6 fire damage. Disappears if dropped but can be re-evoked as bonus action. Sheds 10-foot bright, 10-foot dim light.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.
 
 - name: Flaming Sphere
   level: 2
   school: Conjuration
   classes: [Druid]
-  casting_time: 1 Action
-  range: 60 ft
-  components: V, S, M (tallow, brimstone, and powdered iron)
-  duration: Concentration, up to 1 minute
-  description:
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S, M (A bit of tallow, a pinch of brimstone, and a dusting of powdered iron.)
+  duration: Up to 1 minute
+  description: |
+    5-foot fire sphere appears. Creatures ending turn within 5 feet make Dexterity save or take 2d6 fire damage (half on success). Bonus action to move 30 feet or ram creatures. Jumps barriers 5 feet, pits 10 feet. Ignites objects. Sheds 20-foot bright, 20-foot dim light.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.
+
+- name: Fog Cloud
+  level: 1
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S
+  duration: Up to 1 hour
+  description: |
+    Create 20-foot radius heavily obscured fog sphere. Spreads around corners. Lasts for duration or until wind 10+ mph disperses it.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st.
+
+- name: Foresight
+  level: 9
+  school: Divination
+  classes: [Druid]
+  casting_time: 1 minute
+  range: Touch
+  components: V, S, M (A hummingbird feather.)
+  duration: 8 hours
+  description: |
+    Touched creature can't be surprised, has advantage on attacks, ability checks, and saves. Other creatures have disadvantage on attacks against target for duration. Ends if cast again before duration expires.
+
+- name: Freedom of Movement
+  level: 4
+  school: Abjuration
+  classes: [Druid]
+  subclasses: [Land, Devotion]
+  casting_time: 1 action
+  range: Touch
+  components: V, S, M (A leather strap, bound around the arm or a similar appendage.)
+  duration: 1 hour
+  description: |
+    Touched creature's movement unaffected by difficult terrain. Spells and magical effects can't reduce speed or cause paralysis/restraint. Can spend 5 feet movement to escape nonmagical restraints including grapples. Underwater movement and attacks have no penalties.
+
+- name: Geas
+  level: 5
+  school: Enchantment
+  classes: [Druid]
+  casting_time: 1 minute
+  range: 60 feet
+  components: V
+  duration: 30 days
+  description: |
+    Target makes Wisdom save or is charmed. While charmed, takes 5d10 psychic damage (max once/day) when acting counter to your instructions. Commands can't be suicidal. You can dismiss early. Ended by remove curse, greater restoration, or wish. No effect on creatures that can't understand you.
+
+- name: Giant Insect
+  level: 4
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S
+  duration: Up to 10 minutes
+  description: |
+    Transform up to ten centipedes, three spiders, five wasps, or one scorpion into giant versions. They obey verbal commands and act on your turn. GM has statistics and resolves actions. Lasts until duration ends, creature drops to 0 HP, or you dismiss it.
+
+- name: Goodberry
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 action
+  range: Touch
+  components: V, S, M (A sprig of mistletoe.)
+  duration: Instantaneous
+  description: |
+    Create up to ten berries. Eating one berry (action) restores 1 HP and provides full day's nourishment. Berries lose potency after 24 hours.
+
+- name: Greater Restoration
+  level: 5
+  school: Abjuration
+  classes: [Druid]
+  casting_time: 1 action
+  range: Touch
+  components: V, S, M (Diamond dust worth at least 100gp, which the spell consumes.)
+  duration: Instantaneous
+  description: |
+    Reduce target's exhaustion by one level, or end one: charm/petrification effect, curse including cursed item attunement, ability score reduction, or hit point maximum reduction.
+
+- name: Guidance
+  level: 0
+  school: Divination
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Touch
+  components: V, S
+  duration: Up to 1 minute
+  description: |
+    Touched creature can roll d4 and add to one ability check before spell ends (before or after rolling). Spell then ends.
 
 - name: Gust of Wind
   level: 2
   school: Evocation
   classes: [Druid]
-  casting_time: 1 Action
-  range: Self (60 ft line)
-  components: V, S, M (a legume seed)
-  duration: Concentration, up to 1 minute
-  description:
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Self
+  components: V, S, M (A legume seed.)
+  duration: Up to 1 minute
+  description: |
+    60-foot long, 10-foot wide wind line. Creatures starting turn in line make Strength save or are pushed 15 feet away. Moving toward you costs 2 feet per 1 foot. Disperses gas/vapor, extinguishes unprotected flames, 50% for protected. Bonus action to change direction.
+
+- name: Hallucinatory Terrain
+  level: 4
+  school: Illusion
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 10 minutes
+  range: 300 feet
+  components: V, S, M (A stone, a twig, and a bit of green plant.)
+  duration: 24 hours
+  description: |
+    Make 150-foot cube of natural terrain look, sound, and smell like other natural terrain. Structures, equipment, creatures unchanged. Tactile characteristics unchanged, so creatures likely see through. Intelligence (Investigation) check vs spell DC to disbelieve. Those who disbelieve see vague image superimposed on terrain.
+
+- name: Heal
+  level: 6
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Creature regains 70 HP. Also ends blindness, deafness, and diseases. No effect on constructs or undead.
+
+- name: Healing Word
+  level: 1
+  school: Evocation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 bonus action
+  range: 60 feet
+  components: V
+  duration: Instantaneous
+  description: |
+    Creature regains 1d4 + spellcasting modifier HP. No effect on undead or constructs.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.
 
 - name: Heat Metal
   level: 2
   school: Transmutation
   classes: [Druid]
-  casting_time: 1 Action
-  range: 60 ft
-  components: V, S, M (a piece of iron and a flame)
-  duration: Concentration, up to 1 minute
-  description:
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S, M (A piece of iron and a flame.)
+  duration: Up to 1 minute
+  description: |
+    Choose manufactured metal object. Creature touching it takes 2d8 fire damage when cast, then as bonus action each turn. Creature holding/wearing object must make Constitution save or drop it. If not dropped, has disadvantage on attacks and ability checks until your next turn.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
+
+- name: Heroes' Feast
+  level: 6
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 10 minutes
+  range: 30 feet
+  components: V, S, M (A gem-encrusted bowl worth at least 1,000gp, which the spell consumes.)
+  duration: Instantaneous
+  description: |
+    Create feast taking 1 hour to consume. Up to twelve creatures partake. Benefits after 1 hour: cured of diseases/poison, immune to poison/frightened, advantage on Wisdom saves, +2d10 max HP and current HP. Benefits last 24 hours.
 
 - name: Hold Person
   level: 2
   school: Enchantment
   classes: [Druid]
-  casting_time: 1 Action
-  range: 60 ft
-  components: V, S, M (a small straight piece of iron)
-  duration: Concentration, up to 1 minute
-  description:
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S, M (A small, straight piece of iron.)
+  duration: Up to 1 minute
+  description: |
+    Humanoid makes Wisdom save or is paralyzed. At end of each turn, can repeat save to end effect.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.
+
+- name: Ice Storm
+  level: 4
+  school: Evocation
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 action
+  range: 300 feet
+  components: V, S, M (A pinch of dust and a few drops of water.)
+  duration: Instantaneous
+  description: |
+    20-foot radius, 40-foot high cylinder. Creatures make Dexterity save or take 2d8 bludgeoning and 4d6 cold damage (half on success). Area becomes difficult terrain until end of your next turn.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.
+
+- name: Insect Plague
+  level: 5
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 action
+  range: 300 feet
+  components: V, S, M (A few grains of sugar, some kernels of grain, and a smear of fat.)
+  duration: Up to 10 minutes
+  description: |
+    20-foot radius sphere of locusts. Area is lightly obscured and difficult terrain. Creatures in area when it appears or entering/ending turn there make Constitution save or take 4d10 piercing damage (half on success).
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th.
+
+- name: Jump
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Touch
+  components: V, S, M (A grasshopper's hind leg.)
+  duration: 1 minute
+  description: |
+    Touched creature's jump distance triples until spell ends.
 
 - name: Lesser Restoration
   level: 2
   school: Abjuration
   classes: [Druid]
-  casting_time: 1 Action
+  subclasses: [Lore, Life, Devotion]
+  casting_time: 1 action
   range: Touch
   components: V, S
   duration: Instantaneous
-  description:
+  description: |
+    End one disease or one condition (blinded, deafened, paralyzed, or poisoned) on touched creature.
 
 - name: Locate Animals or Plants
   level: 2
   school: Divination
   classes: [Druid]
-  casting_time: 1 Action
+  subclasses: [Lore]
+  casting_time: 1 action
   range: Self
-  components: V, S, M (a bit of fur from a bloodhound)
-  duration: Concentration, up to 10 minutes
-  description:
+  components: V, S, M (A bit of fur from a bloodhound.)
+  duration: Instantaneous
+  description: |
+    Learn direction and distance to closest specified beast or plant within 5 miles.
+
+- name: Locate Creature
+  level: 4
+  school: Divination
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 action
+  range: Self
+  components: V, S, M (A bit of fur from a bloodhound.)
+  duration: Up to 1 hour
+  description: |
+    Sense direction to creature's location within 1,000 feet. Can find specific known creature OR nearest of a type (must have seen up close within 30 feet). Know direction of movement if moving. Doesn't work on polymorphed creatures. Blocked by 10+ feet wide running water.
 
 - name: Locate Object
   level: 2
   school: Divination
   classes: [Druid]
-  casting_time: 1 Action
+  subclasses: [Lore]
+  casting_time: 1 action
   range: Self
-  components: V, S, M (a forked twig)
-  duration: Concentration, up to 10 minutes
-  description:
+  components: V, S, M (A forked twig.)
+  duration: Up to 10 minutes
+  description: |
+    Sense direction to object's location within 1,000 feet. Can find specific known object OR nearest of a kind (must have seen up close within 30 feet). Know direction of movement if moving. Blocked by any thickness of lead.
+
+- name: Longstrider
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Touch
+  components: V, S, M (A pinch of dirt.)
+  duration: 1 hour
+  description: |
+    Touched creature's speed increases by 10 feet.
+
+- name: Mass Cure Wounds
+  level: 5
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Life]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Choose up to six creatures in 30-foot radius sphere. Each regains 3d8 + spellcasting modifier HP. No effect on undead/constructs.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th.
+
+- name: Mending
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 minute
+  range: Touch
+  components: V, S, M (Two lodestones.)
+  duration: Instantaneous
+  description: |
+    Repair single break/tear (max 1 foot) in touched object, leaving no trace. Can physically repair magic items or constructs but can't restore magic to them.
+
+- name: Mirage Arcane
+  level: 7
+  school: Illusion
+  classes: [Druid]
+  casting_time: 10 minutes
+  range: Sight
+  components: V, S
+  duration: 10 days
+  description: |
+    Make terrain in 1-mile square look, sound, smell, and feel like other terrain. General shape remains same. Can alter structures or add them. Doesn't disguise creatures. Illusion is fully tactile - can create actual difficult terrain or vice versa. Removed pieces disappear. Truesight sees true form but all other elements remain, so creature can still physically interact with illusion.
 
 - name: Moonbeam
   level: 2
   school: Evocation
   classes: [Druid]
-  casting_time: 1 Action
-  range: 120 ft
-  components: V, S, M (several seeds of any moonseed plant and a piece of opalescent feldspar)
-  duration: Concentration, up to 1 minute
-  description:
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S, M (Several seeds of any moonseed plant and a piece of opalescent feldspar.)
+  duration: Up to 1 minute
+  description: |
+    5-foot radius, 40-foot cylinder of dim light. Creatures entering or starting turn inside make Constitution save or take 2d10 radiant damage (half on success). Shapechangers have disadvantage; if fail, revert to original form and can't change until leaving light. Action to move beam 60 feet.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.
 
-- name: Pass without Trace
+- name: Move Earth
+  level: 6
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S, M (An iron blade and a small bag containing a mixture of soils--clay, loam, and sand.)
+  duration: Up to 2 hours
+  description: |
+    Choose 40-foot square terrain. Reshape dirt, sand, or clay: raise/lower elevation, create/fill trench, erect/flatten wall, form pillar. Changes can't exceed half area's largest dimension (e.g., 40-foot square can create 20-foot pillar, 20-foot deep trench). Takes 10 minutes to complete. Every 10 minutes concentrating, can affect new area. Slow transformation prevents trapping creatures. Can't manipulate stone. Structures may collapse if made unstable.
+
+- name: Pass Without Trace
   level: 2
   school: Abjuration
   classes: [Druid]
-  casting_time: 1 Action
+  subclasses: [Lore, Land]
+  casting_time: 1 action
   range: Self
-  components: V, S, M (ashes from a burned leaf of mistletoe and a sprig of spruce)
-  duration: Concentration, up to 1 hour
-  description:
+  components: V, S, M (Ashes from a burned leaf of mistletoe and a sprig of spruce.)
+  duration: Up to 1 hour
+  description: |
+    Creatures you choose within 30 feet gain +10 to Dexterity (Stealth) checks and can't be tracked except magically. Affected creatures leave no tracks or traces.
+
+- name: Planar Binding
+  level: 5
+  school: Abjuration
+  classes: [Druid]
+  casting_time: 1 hour
+  range: 60 feet
+  components: V, S, M (A jewel worth at least 1,000 gp, which the spell consumes.)
+  duration: 24 hours
+  description: |
+    Bind celestial, elemental, fey, or fiend to service. Creature must be within range entire casting (typically in magic circle). At completion, target makes Charisma save or bound to serve. If summoned by another spell, that spell's duration extends to match. Bound creature follows instructions to best of ability. If hostile, twists words to achieve own objectives. Reports when instructions complete if on same plane, or returns to binding location if different plane.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of a higher level, the duration increases; 10 days with a 6th-level slot, 30 days with a 7th-level slot, 180 days with an 8th-level slot, and a year and a day with a 9th-level spell slot.
+
+- name: Plane Shift
+  level: 7
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 action
+  range: Touch
+  components: V, S, M (A forked, metal rod worth at least 250 gp, attuned to a particular plane of existence.)
+  duration: Instantaneous
+  description: |
+    Willing Transport: You and up to eight willing creatures linking hands transport to different plane. Specify destination in general terms, appear in/near it. Alternatively, if you know teleportation circle's sigil sequence on another plane, go to that circle.
+    
+    Unwilling Banish: Make melee spell attack against creature within reach. On hit, target makes Charisma save or transports to random location on plane you specify. Must find own way back.
+
+- name: Plant Growth
+  level: 3
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: 150 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Two uses: Instant (1 action) - 100-foot radius plants become overgrown, cost 4 feet movement per 1 foot. Can exclude areas. Long-term (8 hours) - Half-mile radius enriched for 1 year, plants yield double food when harvested.
+
+- name: Poison Spray
+  level: 0
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 action
+  range: 10 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Target makes Constitution save or takes 1d12 poison damage.
+  higher_level: This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).
+
+- name: Polymorph
+  level: 4
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 60 feet
+  components: V, S, M (A caterpillar cocoon.)
+  duration: Up to 1 hour
+  description: |
+    Transform creature into new beast form. Unwilling makes Wisdom save to avoid. Shapechangers auto-succeed. New form: any beast with CR ≤ target's CR (or level). Target's stats replaced by beast's but retains alignment/personality. Assumes beast's HP. When reverting, returns to original HP. If reverts from 0 HP, excess damage carries over. Can't speak, cast, or use hands. Gear melds. Can't activate equipment.
+  higher_level: At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the maximum CR increases by 1 for each slot level above 4th.
+
+- name: Produce Flame
+  level: 0
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Self
+  components: V, S
+  duration: 10 minutes
+  description: |
+    Flame appears in hand, sheds 10-foot bright, 10-foot dim light. Can hurl at creature within 30 feet as ranged spell attack for 1d8 fire damage (ends spell).
+  higher_level: This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+
+- name: Protection From Energy
+  level: 3
+  school: Abjuration
+  classes: [Druid]
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: Touch
+  components: V, S
+  duration: Up to 1 hour
+  description: |
+    Touched creature gains resistance to one chosen damage type: acid, cold, fire, lightning, or thunder.
 
 - name: Protection from Poison
   level: 2
   school: Abjuration
   classes: [Druid]
-  casting_time: 1 Action
+  subclasses: [Lore]
+  casting_time: 1 action
   range: Touch
   components: V, S
   duration: 1 hour
-  description:
+  description: |
+    Neutralize one poison on touched creature. For duration, target has advantage on saves against being poisoned and resistance to poison damage.
+
+- name: Purify Food and Drink
+  level: 1
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 10 feet
+  components: V, S
+  duration: Instantaneous
+  description: |
+    Nonmagical food and drink in 5-foot radius sphere becomes purified and free of poison and disease.
+
+- name: Regenerate
+  level: 7
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 minute
+  range: Touch
+  components: V, S, M (A prayer wheel and holy water.)
+  duration: 1 hour
+  description: |
+    Touched creature regains 4d8+15 HP immediately, then 1 HP at start of each turn (10/minute). Severed body parts restore after 2 minutes. Holding severed part to stump causes instant reattachment.
+
+- name: Reincarnate
+  level: 5
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 hour
+  range: Touch
+  components: V, S, M (Rare oils and unguents worth at least 1,000 gp, which the spell consumes.)
+  duration: Instantaneous
+  description: |
+    Touch dead humanoid (dead max 10 days). Spell forms new adult body and calls soul to enter. Soul must be free and willing. Body's race likely changes (GM rolls d100): 01-04 Dragonborn, 05-13 Dwarf hill, 14-21 Dwarf mountain, 22-25 Elf dark, 26-34 Elf high, 35-42 Elf wood, 43-46 Gnome forest, 47-52 Gnome rock, 53-56 Half-elf, 57-60 Half-orc, 61-68 Halfling lightfoot, 69-76 Halfling stout, 77-96 Human, 97-00 Tiefling. Retains memories and capabilities but exchanges race and racial traits.
+
+- name: Resistance
+  level: 0
+  school: Abjuration
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Touch
+  components: V, S, M (A miniature cloak.)
+  duration: Up to 1 minute
+  description: |
+    Touched creature can roll d4 and add to one saving throw before spell ends (before or after save). Spell then ends.
+
+- name: Reverse Gravity
+  level: 7
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 100 feet
+  components: V, S, M (A lodestone and iron filings.)
+  duration: Up to 1 minute
+  description: |
+    50-foot radius, 100-foot high cylinder. Creatures/objects not anchored fall upward to top. Dexterity save to grab fixed object avoids fall. Strike ceiling as normal fall. At top, oscillate for duration. When spell ends, everything falls back down.
+
+- name: Scrying
+  level: 5
+  school: Divination
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 10 minutes
+  range: Self
+  components: V, S, M (A focus worth at least 1,000 gp, such as a crystal ball, a silver mirror, or a font filled with holy water.)
+  duration: Up to 10 minutes
+  description: |
+    See and hear creature on same plane. Target makes Wisdom save (can fail voluntarily). Save modifiers - Knowledge: Secondhand +5, Firsthand +0, Familiar -5. Connection: Likeness -2, Possession -4, Body part -10. Success: not affected, can't target again for 24 hours. Failure: invisible sensor within 10 feet moves with target. You see/hear through it. Alternative: target location you've seen before (sensor doesn't move).
+
+- name: Shapechange
+  level: 9
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 action
+  range: Self
+  components: V, S, M (A jade circlet worth at least 1,500 gp, which you must place on your head before you cast the spell.)
+  duration: Up to 1 hour
+  description: |
+    Assume form of creature with CR ≤ your level (not construct/undead, must have seen). Transform into average example without class levels or Spellcasting. Stats replaced by creature's but retain alignment and mental scores. Retain skill/save proficiencies plus creature's (use higher bonus). Can't use legendary/lair actions. Assume creature's HP/Hit Dice. Reverting returns to original HP; excess damage from 0 HP carries over. Retain class/race features if new form can use them. Can't use special senses unless new form has them. Can speak only if creature can. Equipment: choose to drop, merge, or wear (GM determines practicality). Can use action to assume different form (same rules). If new form has more HP than current, HP stays at current value.
+
+- name: Shillelagh
+  level: 0
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 bonus action
+  range: Touch
+  components: V, S, M (Mistletoe, a shamrock leaf, and a club or quarterstaff.)
+  duration: 1 minute
+  description: |
+    Club or quarterstaff becomes magical. Use spellcasting ability instead of Strength for attack and damage rolls. Weapon's damage die becomes d8. Ends if cast again or weapon released.
+
+- name: Sleet Storm
+  level: 3
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: 150 feet
+  components: V, S, M (A pinch of dust and a few drops of water.)
+  duration: Up to 1 minute
+  description: |
+    40-foot radius, 20-foot tall cylinder. Area heavily obscured, extinguishes exposed flames, becomes difficult terrain. Creatures entering or starting turn make Dexterity save or fall prone. Concentrating creatures make Constitution save vs spell DC or lose concentration.
+
+- name: Speak with Animals
+  level: 1
+  school: Divination
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Self
+  components: V, S
+  duration: 10 minutes
+  description: |
+    Comprehend and communicate verbally with beasts. Their knowledge is limited by intelligence, but minimally they can inform about nearby locations, monsters, and anything perceived within past day. May perform small favors at GM's discretion.
+
+- name: Speak with Plants
+  level: 3
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Self
+  components: V, S
+  duration: 10 minutes
+  description: |
+    Imbue plants within 30 feet with sentience. Question about events in area within past day (creatures passed, weather, circumstances). Can turn difficult terrain from plant growth to normal, or vice versa. Plants can perform other tasks at GM's discretion (can't uproot, but can move branches/tendrils/stalks). Communicate with plant creatures as if shared language (no magical influence). Can cause entangle plants to release restrained creature.
+
+- name: Spike Growth
+  level: 2
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: 150 feet
+  components: V, S, M (Seven sharp thorns or seven small twigs, each sharpened to a point.)
+  duration: Up to 10 minutes
+  description: |
+    20-foot radius becomes difficult terrain. Creatures moving in area take 2d4 piercing damage per 5 feet traveled. Ground is camouflaged. Creatures who can't see area when cast can make Wisdom (Perception) check vs spell DC to recognize hazard.
+
+- name: Stone Shape
+  level: 4
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 action
+  range: Touch
+  components: V, S, M (Soft clay, to be crudely worked into the desired shape for the stone object.)
+  duration: Instantaneous
+  description: |
+    Touch Medium or smaller stone object or 5-foot section of stone. Form it into any shape (weapon, idol, coffer, passage through wall under 5 feet thick, sealed door). Can create up to two hinges and latch. No finer mechanical detail possible.
+
+- name: Stoneskin
+  level: 4
+  school: Abjuration
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 action
+  range: Touch
+  components: V, S, M (Diamond dust worth 100 gp, which the spell consumes.)
+  duration: Up to 1 hour
+  description: |
+    Touched creature's flesh becomes hard as stone, gaining resistance to nonmagical bludgeoning, piercing, and slashing damage.
+
+- name: Storm of Vengeance
+  level: 9
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 action
+  range: Sight
+  components: V, S
+  duration: Up to 1 minute
+  description: |
+    A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud (no more than 5,000 feet beneath the cloud) when it appears must make a constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 5 minutes.
+    
+    Each round you maintain concentration on this spell, the storm produces additional effects on your turn.
+    
+    ***Round 2.*** Acidic rain falls from the cloud. Each creature and object under the cloud takes 1d6 acid damage.
+    
+    ***Round 3.*** You call six bolts of lightning from the cloud to strike six creatures or objects of your choice beneath the cloud. A given creature or object can't be struck by more than one bolt. A struck creature must make a dexterity saving throw. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.
+    
+    ***Round 4.*** Hailstones rain down from the cloud. Each creature under the cloud takes 2d6 bludgeoning damage.
+    
+    ***Round 5-10.*** Gusts and freezing rain assail the area under the cloud. The area becomes difficult terrain and is heavily obscured. Each creature there takes 1d6 cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area, whether mundane or magical.
+
+- name: Sunbeam
+  level: 6
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 action
+  range: Self
+  components: V, S, M (A magnifying glass.)
+  duration: Up to 1 minute
+  description: |
+    A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.
+    
+    You can create a new line of radiance as your action on any turn until the spell ends.
+    
+    For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight.
+
+- name: Sunburst
+  level: 8
+  school: Evocation
+  classes: [Druid]
+  casting_time: 1 action
+  range: 150 feet
+  components: V, S, M (Fire and a piece of sunstone.)
+  duration: Instantaneous
+  description: |
+    Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.
+    
+    A creature blinded by this spell makes another constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.
+    
+    This spell dispels any darkness in its area that was created by a spell.
+
+- name: Thunderwave
+  level: 1
+  school: Evocation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: Self
+  components: V, S
+  duration: Instantaneous
+  description: |
+    A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.
+    
+    In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.
+
+- name: Transport via Plants
+  level: 6
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 action
+  range: 10 feet
+  components: V, S
+  duration: 1 round
+  description: |
+    This spell creates a magical link between a Large or larger inanimate plant within range and another plant, at any distance, on the same plane of existence. You must have seen or touched the destination plant at least once before. For the duration, any creature can step into the target plant and exit from the destination plant by using 5 feet of movement.
+
+- name: Tree Stride
+  level: 5
+  school: Conjuration
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 action
+  range: Self
+  components: V, S
+  duration: Up to 1 minute
+  description: |
+    You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.
+    
+    You can use this transportation ability once per round for the duration. You must end each turn outside a tree.
+
+- name: True Resurrection
+  level: 9
+  school: Necromancy
+  classes: [Druid]
+  casting_time: 1 hour
+  range: Touch
+  components: V, S, M (A sprinkle of holy water and diamonds worth at least 25,000gp, which the spell consumes.)
+  duration: Instantaneous
+  description: |
+    You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature's soul is free and willing, the creature is restored to life with all its hit points.
+    
+    This spell closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses affecting the creature when it died. The spell replaces damaged or missing organs and limbs.
+    
+    The spell can even provide a new body if the original no longer exists, in which case you must speak the creature's name. The creature then appears in an unoccupied space you choose within 10 feet of you.
+
+- name: Wall of Fire
+  level: 4
+  school: Evocation
+  classes: [Druid]
+  subclasses: [Fiend]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S, M (A small piece of phosphorus.)
+  duration: Up to 1 minute
+  description: |
+    You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall is opaque and lasts for the duration.
+    
+    When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.
+    
+    One side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet o f that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.
+    
+    The other side of the wall deals no damage.
+
+- name: Wall of Stone
+  level: 5
+  school: Evocation
+  classes: [Druid]
+  subclasses: [Land]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S, M (A small block of granite.)
+  duration: Up to 10 minutes
+  description: |
+    A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.
+    
+    If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.
+    
+    The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.
+    
+    If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.
+    
+    The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the GM's discretion.
+    
+    If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends.
+
+- name: Wall of Thorns
+  level: 6
+  school: Conjuration
+  classes: [Druid]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S, M (A handful of thorns.)
+  duration: Up to 10 minutes
+  description: |
+    You create a wall of tough, pliable, tangled brush bristling with needle-sharp thorns. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 60 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight.
+    
+    When the wall appears, each creature within its area must make a dexterity saving throw. On a failed save, a creature takes 7d8 piercing damage, or half as much damage on a successful save.
+    
+    A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature moves through the wall, it must spend 4 feet of movement. Furthermore, the first time a creature enters the wall on a turn or ends its turn there, the creature must make a dexterity saving throw. It takes 7d8 slashing damage on a failed save, or half as much damage on a successful one.
+
+- name: Water Breathing
+  level: 3
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S, M (A short piece of reed or straw.)
+  duration: 24 hours
+  description: |
+    This spell gives a maximum of ten willing creatures within range and you can see, the ability to breathe underwater until the end of its term. Affected creatures also retain their normal breathing pattern.
+
+- name: Water Walk
+  level: 3
+  school: Transmutation
+  classes: [Druid]
+  subclasses: [Lore, Land]
+  casting_time: 1 action
+  range: 30 feet
+  components: V, S, M (A piece of cork.)
+  duration: 1 hour
+  description: |
+    This spell grants the ability to move across any liquid surface--such as water, acid, mud, snow, quicksand, or lava--as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.
+    
+    If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round.
+
+- name: Wind Walk
+  level: 6
+  school: Transmutation
+  classes: [Druid]
+  casting_time: 1 minute
+  range: 30 feet
+  components: V, S, M (Fire and holy water.)
+  duration: 8 hours
+  description: |
+    You and up to ten willing creatures you can see within range assume a gaseous form for the duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only actions a creature can take in this form are the Dash action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is incapacitated and can't move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation.
+    
+    If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, the creature falls the remaining distance.
+
+- name: Wind Wall
+  level: 3
+  school: Evocation
+  classes: [Druid]
+  subclasses: [Lore]
+  casting_time: 1 action
+  range: 120 feet
+  components: V, S, M (A tiny fan and a feather of exotic origin.)
+  duration: Up to 1 minute
+  description: |
+    A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the duration.
+    
+    When the wall appears, each creature within its area must make a strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one.
+    
+    The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can't pass through it.
