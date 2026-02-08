@@ -5,81 +5,124 @@
   level: 0
   school: Conjuration
   classes: [Wizard]
-  casting_time: 1 Action
   range: 60 ft
   components: V, S
-  duration:
-  description:
+  description: You hurl a bubble of acid at a targeted creature within range. The target must make a Dexterity saving throw, failing which they take 1d6 acid damage. You can target one creature or two creatures within 5 feet of each other.
 
 - name: Blade Ward
   level: 0
   school: Abjuration
   classes: [Wizard]
-  casting_time: 1 Action
   range: Self
   components: V, S
-  duration: 1 round
-  description:
+  description: You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.
 
 - name: Chill Touch
   level: 0
   school: Necromancy
   classes: [Wizard]
-  casting_time: 1 Action
   range: 120 ft
   components: V, S
-  duration: 1 round
-  description:
+  description: You create a spectral hand that targets a creature with a ranged spell attack. On a hit, it deals 1d8 necrotic damage and prevents the target from regaining hit points until your next turn. If the target is undead, it suffers disadvantage on attack rolls against you until the end of your next turn.
+
+- name: Control Flames
+  level: 0
+  school: Transmutation
+  classes: [Wizard]
+  range: 60 feet
+  components: S
+  duration: Instantaneous or 1 hour
+  description: 'You can manipulate a nonmagical flame within a 5-foot cube in several ways: expanding it if fuel is present, extinguishing it, altering its light or color for 1 hour, or creating and animating simple shapes within the flame for the same duration. Casting the spell multiple times allows for up to three non-instantaneous effects to be active simultaneously, with the ability to dismiss them as an action.'
+
+- name: Create Bonfire
+  level: 0
+  school: Conjuration
+  classes: [Wizard]
+  range: 60 feet
+  components: V, S
+  duration: Concentration, up to 1 minute
+  description: You create a bonfire in a visible area, which fills a 5-foot cube. Any creature in the bonfire's space when the spell is cast must succeed on a Dexterity saving throw or take 1d8 fire damage. Additionally, creatures must make the saving throw if they enter the space for the first time on a turn or end their turn there. The damage increases by 1d8 at 5th (2d8), 11th (3d8), and 17th level (4d8).
 
 - name: Dancing Lights
   level: 0
   school: Evocation
   classes: [Wizard]
-  casting_time: 1 Action
   range: 120 ft
   components: V, S, M (a bit of phosphorus or wychwood)
   duration: Concentration, up to 1 minute
-  description:
+  description: Up to four torch-sized lights can be created in forms like torches, lanterns, or glowing orbs, each providing dim light in a 10-foot radius. Lights can merge into a Medium-sized humanoid shape. Bonus action, the lights can be moved up to 60 feet while staying within 20 feet of each other and within the spell's range.
+
+- name: Encode Thoughts
+  level: 0
+  school: Enchantment
+  classes: [Wizard]
+  range: Self
+  components: S
+  duration: 8 hours
+  description: You can create a thought strand by turning a memory, idea, or message from your mind into a glowing energy string. This Tiny, weightless object appears within 5 feet and remains stationary until the spell is recast. If you use this spell while focusing on an ability like detect thoughts, you can convert those thoughts into a thought strand instead. Holding a thought strand allows for instant access to its contained memory or message.
 
 - name: Fire Bolt
   level: 0
   school: Evocation
   classes: [Wizard]
-  casting_time: 1 Action
   range: 120 ft
   components: V, S
   duration: Instantaneous
-  description:
+  description: 'You launch a fire mote at a target within range, making a ranged spell attack. On a successful hit, the target suffers 1d10 fire damage, and if a flammable object is struck and not worn or carried, it ignites.'
 
 - name: Friends
   level: 0
   school: Enchantment
   classes: [Wizard]
-  casting_time: 1 Action
   range: Self
   components: S, M (a small amount of makeup applied to the face)
   duration: Concentration, up to 1 minute
-  description:
+  description: During the spell, you receive advantage on Charisma checks with a selected non-hostile creature. After the spell ends, the creature realizes the magical influence, which may result in its hostility, subject to the DM's discretion.
+
+- name: Frostbite
+  level: 0
+  school: Evocation
+  classes: [Wizard]
+  range: 60 feet
+  components: S, V
+  duration: Instantaneous
+  description: You create numbing frost on a visible creature within range, requiring it to make a Constitution saving throw. If it fails, it takes 1d6 cold damage and suffers disadvantage on its next weapon attack roll before the end of its next turn. At 5th level, the damage increases to 2d6, 3d6 at 11th level, and 4d6 at 17th level.
+
+- name: Gust
+  level: 0
+  school: Transmutation
+  classes: [Wizard]
+  range: 30 feet
+  components: S, V
+  duration: Instantaneous
+  description: 'You can manipulate air to achieve one of the following effects within range: push a Medium or smaller creature up to 5 feet away with a failed Strength saving throw; move an unheld object weighing no more than 5 pounds up to 10 feet without causing damage; or create harmless sensory effects like rustling leaves or fluttering clothing.'
+
+- name: Infestation
+  level: 0
+  school: Conjuration
+  classes: [Wizard]
+  range: 30 feet
+  components: S, V, M (a living flea)
+  duration: Instantaneous
+  description: "You create a temporary cloud of mites, fleas, and parasites around a creature within range. The target must make a Constitution saving throw; on failure, it suffers 1d6 poison damage and is moved 5 feet in a random direction, determined by rolling a d4 (1=North, 2=South, 3=East, 4=West). This movement does not trigger opportunity attacks and is nullified if the rolled direction is blocked. The spell's damage increases by 1d6 at higher levels: 2d6 at 5th level, 3d6 at 11th, and 4d6 at 17th."
 
 - name: Light
   level: 0
   school: Evocation
   classes: [Wizard]
-  casting_time: 1 Action
   range: Touch
   components: V, M (a firefly or phosphorescent moss)
   duration: 1 hour
-  description:
+  description: Cast a spell that creates bright light in a 20-foot radius and dim light for an additional 20 feet, touch an object up to 10 feet in size. The light's color can be customized, and it is blocked by an opaque covering. The spell ends if recast or dismissed, and if aimed at an object held by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.
 
 - name: Mage Hand
   level: 0
   school: Conjuration
   classes: [Wizard]
-  casting_time: 1 Action
   range: 30 ft
   components: V, S
   duration: 1 minute
-  description:
+  description: A spectral hand can be summoned within range, lasting until dismissed or if it moves more than 30 feet away. It can manipulate objects, open unlocked doors, and stow or retrieve items, moving up to 30 feet with each action. It cannot, however, attack, activate magical items, or carry over 10 pounds.
 
 - name: Mending
   level: 0
@@ -88,78 +131,113 @@
   casting_time: 1 Minute
   range: Touch
   components: V, S, M (two lodestones)
-  duration: Instantaneous
-  description:
+  description: This spell repairs a single break or tear in an object up to 1 foot in size, such as a broken chain link or torn cloak, without leaving any trace of damage. It can also repair magical items or constructs, but does not restore their magical properties.
 
 - name: Message
   level: 0
   school: Transmutation
   classes: [Wizard]
-  casting_time: 1 Action
   range: 120 ft
   components: V, S, M (a short piece of copper wire)
   duration: 1 round
-  description:
+  description: You can whisper a message to a creature within range, which can respond in a whisper only you can hear. This spell can penetrate solid objects if you are familiar with the target, except when blocked by magical silence or specific materials such as stone, metal, lead, or wood.
 
 - name: Minor Illusion
   level: 0
   school: Illusion
   classes: [Wizard]
-  casting_time: 1 Action
   range: 30 ft
   components: S, M (a bit of fleece)
   duration: 1 minute
-  description:
+  description: Allows the creation of a sound or an image of an object within a specified range. Sounds can vary in volume and can be anything from whispers to screams, while images must be no larger than a 5-foot cube and cannot produce sensory effects. Physical interaction with the image reveals its illusory nature. Creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.
+
+- name: Mold Earth
+  level: 0
+  school: Transmutation
+  classes: [Wizard]
+  range: 30 ft
+  components: S
+  duration: Instantaneous or 1 hour
+  description: 'Within a 5-foot cube, you can choose dirt or stone to manipulate in several ways: excavate and move loose earth up to 5 feet, create shapes or colors lasting 1 hour, or alter terrain status (normal to difficult or vice versa) for the same duration. You can maintain up to two non-instantaneous effects from multiple casts, with the ability to dismiss them as an action.'
+
 
 - name: Poison Spray
   level: 0
   school: Conjuration
   classes: [Wizard]
-  casting_time: 1 Action
   range: 10 ft
   components: V, S
   duration: Instantaneous
-  description:
+  description: You project a puff of noxious gas at a creature within range, requiring it to make a Constitution saving throw. On failure, the creature takes 1d12 poison damage, which increases to 2d12 at 5th level, 3d12 at 11th level, and 4d12 at 17th level.
 
 - name: Prestidigitation
   level: 0
   school: Transmutation
   classes: [Wizard]
-  casting_time: 1 Action
   range: 10 ft
   components: V, S
   duration: Up to 1 hour
-  description:
+  description: This spell is a minor magical trick for novice spellcasters, enabling them to create harmless sensory effects, light or extinguish small flames, clean or soil objects up to 1 cubic foot, alter the temperature or flavor of nonliving items for one hour, make marks or symbols last for an hour, and create small nonmagical trinkets or illusory images. Multiple castings allow for up to three simultaneous non-instantaneous effects, which can be dismissed as an action.
 
 - name: Ray of Frost
   level: 0
   school: Evocation
   classes: [Wizard]
-  casting_time: 1 Action
   range: 60 ft
   components: V, S
   duration: Instantaneous
-  description:
+  description: A blue-white beam of light strikes a creature, requiring a ranged spell attack. If successful, the target takes 1d8 cold damage and its speed is reduced by 10 feet until the next turn. Damage increases to 2d12 at 5th level, 3d12 at 11th level, and 4d12 at 17th level.
+
+- name: Sapping Sting
+  level: 0
+  school: Necromancy (Dunamancy)
+  classes: [Wizard]
+  range: 30 feet
+  components: V, S
+  duration: Instantaneous
+  description: You sap the vitality of a target creature within your range, which must succeed on a Constitution saving throw. If it fails, the target takes 1d4 necrotic damage and falls prone. The damage increases by 1d4 at levels 5 (2d4), 11 (3d4), and 17 (4d4).
+
+- name: Shape Water
+  level: 0
+  school: Transmutation
+  classes: [Wizard]
+  range: 30 feet
+  components: S
+  duration: Instantaneous or 1 hour
+  description: You can manipulate a 5-foot cube of water by moving it, changing its flow direction, shaping and animating it for 1 hour, altering its color or opacity for 1 hour, or freezing it (with unfreezing in 1 hour if no creatures are present). You can have a maximum of two non-instantaneous effects active at once and can dismiss them as an action.
 
 - name: Shocking Grasp
   level: 0
   school: Evocation
   classes: [Wizard]
-  casting_time: 1 Action
   range: Touch
   components: V, S
-  duration: Instantaneous
-  description:
+  description: Lightning creates a shocking melee attack that requires you to successfully touch a creature. If the target wears metal armor, you have an advantage on the attack roll. On a successful hit, the target suffers 1d8 lightning damage and cannot take reactions until its next turn. The spell’s damage increases to 2d8 at 5th level, 3d8 at 11th level, and 4d8 at 17th level.
+
+- name: Thunderclap
+  level: 0
+  school: Evocation
+  classes: [Wizard]
+  range: Self (5-foot radius)
+  components: S
+  description: You emit a thunderous sound audible up to 100 feet away. Creatures within 5 feet must make a Constitution saving throw; failure results in 1d6 thunder damage. The damage increases by 1d6 at levels 5 (2d6), 11 (3d6), and 17 (4d6).
+
+- name: Toll the Dead
+  level: 0
+  school: Necromancy
+  classes: [Wizard]
+  range: 60 ft
+  components: V, S
+  description: You target a creature within range, causing a sound of a dolorous bell to resonate. The creature must make a Wisdom saving throw or suffer 1d8 necrotic damage, increasing to 1d12 if it has missing hit points. When cast at higher levels, the damage scales up to 2d8 or 2d12 at 5th level, 3d8 or 3d12 at 11th, and 4d8 or 4d12 at 17th level.
 
 - name: True Strike
   level: 0
   school: Divination
   classes: [Wizard]
-  casting_time: 1 Action
   range: 30 ft
   components: S
   duration: Concentration, up to 1 round
-  description:
+  description: You gain brief insight into a target's defenses when you point at it, allowing you to have advantage on your first attack roll against that target on your next turn, as long as the spell is still active.
 
 # ======================
 # WIZARD — LEVEL 1
